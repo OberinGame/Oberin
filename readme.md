@@ -1,4 +1,14 @@
 Oberin is an online fantasy role-playing game with a friendly virtual community.
 
 # Instructions
-Todo
+In progress. I'm current analyzing the requirements to build and run the Oberin server and client. It uses CodeWarrior with a PowerPC Mac OS. First the goal is to get it to build and work.
+
+# Goal
+Transition Oberin from CodeWarrior to more recent build tools. Upgrade the platform from older Mac Power PC to the latest platforms.
+
+# Planned Roadmap
+1. Get Oberin built and running in SheepShaver or QEMU using CodeWarrior.
+2. Document how to run and the code and assets.
+3. Experiment with game asset conversions. Organize and preserve data.
+4. Choose between incrementally upgrading the build process from CodeWarrior to XCode and up the platforms or attempting straight transitioning the code to a completely new up-to-date build toolchain.
+5. Execute choice.
