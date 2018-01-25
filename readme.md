@@ -16,3 +16,5 @@ Transition Oberin from CodeWarrior to more recent build tools. Upgrade the platf
 # Setup
 Folders required in the main server folder: Accounts, AKA IP, AKA Mac, CC Logs, Creature Settings, GM Logs, Oberin Containers, Oberin Halls, Oberin Logs, Overin Signs.
 
+# Future Improvements
+ - Hash Character Passwords
