@@ -12,3 +12,6 @@ Transition Oberin from CodeWarrior to more recent build tools. Upgrade the platf
 3. Experiment with game asset conversions. Organize and preserve data.
 4. Choose between incrementally upgrading the build process from CodeWarrior to XCode and up the platforms or attempting straight transitioning the code to a completely new up-to-date build toolchain.
 5. Execute choice.
+
+# Setup
+Folders required in the main server folder: Accounts, AKA IP, AKA Mac, CC Logs, Creature Settings, GM Logs, Oberin Containers, Oberin Halls, Oberin Logs, Overin Signs.
