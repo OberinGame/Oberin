@@ -1,1 +1,62 @@
-// Sea Serpent SettingsSPEED=50;                // 35-1000 ... lower values are fasterPOISONOUS=0;             // 0-100 ... higher values are more poisonousHIT_POINTS=175;          // 1-250STRENGTH=175;            // 1-250INTELLIGENCE=60;         // 1-250DEXTERITY=50;            // 1-250MAGIC_POINTS=NA;         // 1-250MIN_GOLD=850;             // 0 - 100000MAX_GOLD=1200;            // 0 - 100000SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=40;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=15;          // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=65;         // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=60;           // 0 - 250MAX_DAMAGE=90;           // 0 - 250LEVEL=11;TRACKING_LEVEL=11;SIZE=2;// Weapon Effectiveness#dagger(50);#holydagger(50);#blooddagger(50);#broadsword(50);#katana(75);#scimitar(75);#flail(50);#mace(75);#warhammer(75);#spear(50);#sickle(75);#shortbow(10);#longbow(10);#neptunestrident(125);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,6,10); // 6 to 10 raw steaks#inventory(387,0,5); // 0 to 2 green crystals#inventory(388,0,5); // 0 to 2 red crystals#inventory(389,0,5); // 0 to 2 blue crystals#inventory(390,0,5); // 0 to 2 purple crystals#inventory(391,0,5); // 0 to 2 orange crystals#inventory(392,0,5); // 0 to 2 yellow crystals#inventory(409,0,5); // 0 to 2 fire crystals#inventory(416,0,5); // 0 to 2 black crystals#inventory(412,0,1); // purple egg
+// Sea Serpent Settings
+
+SPEED=50;                // 35-1000 ... lower values are faster
+POISONOUS=0;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=175;          // 1-250
+STRENGTH=175;            // 1-250
+INTELLIGENCE=60;         // 1-250
+DEXTERITY=50;            // 1-250
+MAGIC_POINTS=NA;         // 1-250
+MIN_GOLD=850;             // 0 - 100000
+MAX_GOLD=1200;            // 0 - 100000
+SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=40;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=15;          // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=65;         // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=60;           // 0 - 250
+MAX_DAMAGE=90;           // 0 - 250
+LEVEL=11;
+TRACKING_LEVEL=11;
+SIZE=2;
+
+// Weapon Effectiveness
+
+#dagger(50);
+#holydagger(50);
+#blooddagger(50);
+#broadsword(50);
+#katana(75);
+#scimitar(75);
+#flail(50);
+#mace(75);
+#warhammer(75);
+#spear(50);
+#sickle(75);
+#shortbow(10);
+#longbow(10);
+#neptunestrident(125);
+
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,6,10); // 6 to 10 raw steaks
+#inventory(387,0,5); // 0 to 2 green crystals
+#inventory(388,0,5); // 0 to 2 red crystals
+#inventory(389,0,5); // 0 to 2 blue crystals
+#inventory(390,0,5); // 0 to 2 purple crystals
+#inventory(391,0,5); // 0 to 2 orange crystals
+#inventory(392,0,5); // 0 to 2 yellow crystals
+#inventory(409,0,5); // 0 to 2 fire crystals
+#inventory(416,0,5); // 0 to 2 black crystals
+#inventory(412,0,1); // purple egg

@@ -1,1 +1,59 @@
-// Rust Beast SettingsSPEED=100;                // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=100;           // 1-250STRENGTH=100;             // 1-250INTELLIGENCE=30;          // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=30;              // 0 - 100000MAX_GOLD=45;              // 0 - 100000SEEK_GOLD=FALSE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=100;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=7;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=15;          // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=6;             // 0 - 250MAX_DAMAGE=10;            // 0 - 250LEVEL=7;TRACKING_LEVEL=7;SIZE=1;// Weapon Effectiveness#dagger(50);#holydagger(50);#blooddagger(50);#broadsword(50);#katana(75);#scimitar(75);#flail(50);#mace(50);#warhammer(50);#spear(50);#sickle(75);#shortbow(50);#club(50);#stave(50);#longbow(50);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,8,12); // 8 to 12 raw steaks#inventory(79,1,50); // closed plate helm#inventory(85,1,70); //  plate arms#inventory(81,1,50); // chain mail coif#inventory(30,1,50); // scimitar#inventory(79,1,50); // closed plate helm#inventory(565,0,1); //rust gland
+// Rust Beast Settings
+
+SPEED=100;                // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=100;           // 1-250
+STRENGTH=100;             // 1-250
+INTELLIGENCE=30;          // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=30;              // 0 - 100000
+MAX_GOLD=45;              // 0 - 100000
+SEEK_GOLD=FALSE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=100;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=7;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=15;          // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=6;             // 0 - 250
+MAX_DAMAGE=10;            // 0 - 250
+LEVEL=7;
+TRACKING_LEVEL=7;
+SIZE=1;
+
+// Weapon Effectiveness
+
+#dagger(50);
+#holydagger(50);
+#blooddagger(50);
+#broadsword(50);
+#katana(75);
+#scimitar(75);
+#flail(50);
+#mace(50);
+#warhammer(50);
+#spear(50);
+#sickle(75);
+#shortbow(50);
+#club(50);
+#stave(50);
+#longbow(50);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,8,12); // 8 to 12 raw steaks
+#inventory(79,1,50); // closed plate helm
+#inventory(85,1,70); //  plate arms
+#inventory(81,1,50); // chain mail coif
+#inventory(30,1,50); // scimitar
+#inventory(79,1,50); // closed plate helm
+#inventory(565,0,1); //rust gland

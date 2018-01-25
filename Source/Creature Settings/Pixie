@@ -1,1 +1,115 @@
-// Pixie SettingsSPEED=31;                 // 35-1000 ... lower values are fasterPOISONOUS=1;              // 0-100 ... higher values are more poisonousHIT_POINTS=60;            // 1-250STRENGTH=40;              // 1-250INTELLIGENCE=90;          // 1-250DEXTERITY=90;             // 1-250MAGIC_POINTS=100;          // 1-250MIN_GOLD=1;              // 0 - 100000MAX_GOLD=3;              // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=35;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=10;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=10;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=1;             // 0 - 250MAX_DAMAGE=5;             // 0 - 250LEVEL=5; TRACKING_LEVEL=5;SIZE=0;MAGERY_LEVEL=4;SPELLCAST_CHANCE=100;SELFHEAL_CHANCE=100;SELFHEAL_TRIGGER=20;#spell(1011,0,20);  //Chaos#spell(339,0,20);//explosion#spell(330,0,20);//poison#spell(337,0,10);//disorient//#spell(321,0,10);//weaken#spell(338,0,20);//paralyze#spell(1001,0,10);//MA// Weapon Effectiveness#katana(75);#longsword(75);#flamingsword (75);	// FireSword #broadsword	(75);	//BroadSword #scimitar(75); //Scimitar #holydagger(75);	//	 HolyDagger #blooddagger(75);	// BloodDagger #knife(75); // Knife #stave(75);//Stave #sickle(75); //Sickle #club(75); //Club #flail(75); //Flail #shortbow(30); //ShortBow #longbow(30); //LongBow #battleaxe(75); //BattleAxe #frostaxe(75); //FrostAxe #handaxe(75); //HandAxe #dwarvenhandaxe(75); //DwarvenHandAxe #amberaxe(75); //AmberAxe #glaive(75); //Glaive #neptunestrident(100); //NeptunesTrident #spear(75); //Spear #warhammer(75);//WarHammer #mace(75); //Mace #dagger(75); //dagger		#if (ENGLISH,ATTACKING,HUMAN) say(Die you big nasty thing you!);#if (ENGLISH,ATTACKING,HUMAN) say(Take that!);#if (ENGLISH,ATTACKING,HUMAN) say(Take that!);#if (ENGLISH,ATTACKING,HUMAN) say(Hiyaww!!);#if (ENGLISH,ATTACKING,CLERIC) say(The forest hates your kind!);#if (ENGLISH,ATTACKING,ROUGE) say(The forest hates your kind!);#if (ENGLISH,ATTACKING,WIZARD) say(The forest hates your kind!);#if (ENGLISH,ATTACKING,WIZARD) say(Stop it!);#if (ENGLISH,ATTACKING,FIGHTER) say(Brute!);#if (ENGLISH,ATTACKING,FIGHTER) say(I'm too fast for your flyswatter!);#if (ENGLISH,ATTACKING,RANGER) say(Brute!);#if (ENGLISH,ATTACKING,RANGER) say(Haha! I'm too fast for your sticks!);#if (ENGLISH,ATTACKING,PET) say(Why beastie? Why?);#if (ENGLISH,ATTACKING,PET) say(Poor thing is brainwashed!);#if (ENGLISH,ATTACKING,DRUID) say(Why beastie? Why?);#if (ENGLISH,RETREATING) say(You would kill me?!);#if (ENGLISH,RETREATING) say(That hurts!);#if (ENGLISH,RETREATING) say(Someone help me!);#if (ENGLISH,RETREATING) say(Please, no!);#if (ENGLISH,CHASING,HUMAN) say(I'm too fast for you!);#if (ENGLISH,CHASING,HUMAN) say(You cannot outrun us!);#if (ENGLISH,CHASING,HUMAN) say(We have wings human!);#if (ENGLISH,KILLING,HUMAN) say(Now you pay!);#if (ENGLISH,KILLING,HUMAN) say(Yay!);#if (ENGLISH,KILLING,HUMAN) say(Hooray!);#if (ENGLISH,HIDING,HUMAN) say(I know I saw something...);#if (ENGLISH,JUST_HID,HUMAN) say(Hmmm....);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item//#inventory(352,1,2); // 2 to 4 raw steaks//#inventory(291,0,2); // 30 to 50 feathers//#inventory(411,0,1); // 0 to 1 red egg#inventory(751,0,1); // x dust
+// Pixie Settings
+
+SPEED=31;                 // 35-1000 ... lower values are faster
+POISONOUS=1;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=60;            // 1-250
+STRENGTH=40;              // 1-250
+INTELLIGENCE=90;          // 1-250
+DEXTERITY=90;             // 1-250
+MAGIC_POINTS=100;          // 1-250
+MIN_GOLD=1;              // 0 - 100000
+MAX_GOLD=3;              // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=35;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=10;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=10;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=1;             // 0 - 250
+MAX_DAMAGE=5;             // 0 - 250
+LEVEL=5; 
+TRACKING_LEVEL=5;
+SIZE=0;
+MAGERY_LEVEL=4;
+SPELLCAST_CHANCE=100;
+SELFHEAL_CHANCE=100;
+SELFHEAL_TRIGGER=20;
+
+#spell(1011,0,20);  //Chaos
+#spell(339,0,20);//explosion
+#spell(330,0,20);//poison
+#spell(337,0,10);//disorient
+//#spell(321,0,10);//weaken
+#spell(338,0,20);//paralyze
+#spell(1001,0,10);//MA
+
+
+
+// Weapon Effectiveness
+
+#katana(75);
+#longsword(75);
+#flamingsword (75);	// FireSword 
+#broadsword	(75);	//BroadSword 
+#scimitar(75); //Scimitar 
+#holydagger(75);	//	 HolyDagger 
+#blooddagger(75);	// BloodDagger 
+#knife(75); // Knife 
+#stave(75);//Stave 
+#sickle(75); //Sickle 
+#club(75); //Club 
+#flail(75); //Flail 
+#shortbow(30); //ShortBow 
+#longbow(30); //LongBow 
+#battleaxe(75); //BattleAxe 
+#frostaxe(75); //FrostAxe 
+#handaxe(75); //HandAxe 
+#dwarvenhandaxe(75); //DwarvenHandAxe 
+#amberaxe(75); //AmberAxe 
+#glaive(75); //Glaive 
+#neptunestrident(100); //NeptunesTrident 
+#spear(75); //Spear 
+#warhammer(75);//WarHammer 
+#mace(75); //Mace 
+#dagger(75); //dagger		
+
+
+#if (ENGLISH,ATTACKING,HUMAN) say(Die you big nasty thing you!);
+#if (ENGLISH,ATTACKING,HUMAN) say(Take that!);
+#if (ENGLISH,ATTACKING,HUMAN) say(Take that!);
+#if (ENGLISH,ATTACKING,HUMAN) say(Hiyaww!!);
+#if (ENGLISH,ATTACKING,CLERIC) say(The forest hates your kind!);
+#if (ENGLISH,ATTACKING,ROUGE) say(The forest hates your kind!);
+#if (ENGLISH,ATTACKING,WIZARD) say(The forest hates your kind!);
+#if (ENGLISH,ATTACKING,WIZARD) say(Stop it!);
+#if (ENGLISH,ATTACKING,FIGHTER) say(Brute!);
+#if (ENGLISH,ATTACKING,FIGHTER) say(I'm too fast for your flyswatter!);
+#if (ENGLISH,ATTACKING,RANGER) say(Brute!);
+#if (ENGLISH,ATTACKING,RANGER) say(Haha! I'm too fast for your sticks!);
+#if (ENGLISH,ATTACKING,PET) say(Why beastie? Why?);
+#if (ENGLISH,ATTACKING,PET) say(Poor thing is brainwashed!);
+#if (ENGLISH,ATTACKING,DRUID) say(Why beastie? Why?);
+
+#if (ENGLISH,RETREATING) say(You would kill me?!);
+#if (ENGLISH,RETREATING) say(That hurts!);
+#if (ENGLISH,RETREATING) say(Someone help me!);
+#if (ENGLISH,RETREATING) say(Please, no!);
+
+#if (ENGLISH,CHASING,HUMAN) say(I'm too fast for you!);
+#if (ENGLISH,CHASING,HUMAN) say(You cannot outrun us!);
+#if (ENGLISH,CHASING,HUMAN) say(We have wings human!);
+
+#if (ENGLISH,KILLING,HUMAN) say(Now you pay!);
+#if (ENGLISH,KILLING,HUMAN) say(Yay!);
+#if (ENGLISH,KILLING,HUMAN) say(Hooray!);
+
+#if (ENGLISH,HIDING,HUMAN) say(I know I saw something...);
+
+#if (ENGLISH,JUST_HID,HUMAN) say(Hmmm....);
+
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+//#inventory(352,1,2); // 2 to 4 raw steaks
+//#inventory(291,0,2); // 30 to 50 feathers
+//#inventory(411,0,1); // 0 to 1 red egg
+#inventory(751,0,1); // x dust

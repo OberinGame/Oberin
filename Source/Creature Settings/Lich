@@ -1,1 +1,112 @@
-// LichSPEED=48;                // 35-1000 ... lower values are fasterPOISONOUS=0;             // 0-100 ... higher values are more poisonousHIT_POINTS=600;           // 1-250STRENGTH=100;             // 1-250INTELLIGENCE=250;         // 1-250DEXTERITY=100;            // 1-250MAGIC_POINTS=500;         // 1-250MIN_GOLD=850;              // 0 - 100000MAX_GOLD=2200;             // 0 - 100000SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=10;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;        // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=80;         // 1 - 100POISON_IMMUNITY=TRUE;   // TRUE or FALSELOCK=10;                  // 0 - 100MIN_DAMAGE=50;            // 0 - 250MAX_DAMAGE=70;           // 0 - 250LEVEL=16;TRACKING_LEVEL=16;SIZE=2;MAGERY_LEVEL=18;SPELLCAST_CHANCE=60;SELFHEAL_CHANCE=75;SELFHEAL_TRIGGER=200;#spell(1000,0,35);//FB#spell(1501,0,25);// chaos field#spell(331,0,10);// LB#spell(1010,0,20);//summon skells// Weapon Effectiveness#dagger(75);#holydagger(75);#blooddagger(75);#broadsword(75);#flail(75);#spear(75);#club(75);#shortbow(75);#longsword(75);#battleaxe(75);#glaive(75);#silverkatana(150);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item//#inventory(352,2,5); // 2 to 5 raw steaks#inventory(431,0,1); // crystal skull//#inventory(288,1,50); // 1 in 10 gold ring//#inventory(34,3,4); // 3 in 4 sickle//#inventory(280,0,1); // 1 in 10 bolt#inventory(294,0,10); // 0 to 10 ginseng#inventory(295,0,10); // 0 to 10 lotus flowers#inventory(296,0,10); // 0 to 10 mandrake roots#inventory(297,0,10); // 0 to 10 amber#inventory(298,0,10); // 0 to 10 garlic#inventory(299,0,10); // 0 to 10 volcanic ash#inventory(300,0,10); // 0 to 10 poison glands#inventory(301,0,10); // 0 to 10 coal#inventory(302,0,10); // 0 to 10 electric eels#inventory(275,0,5); // 0 to 5 dragon teeth// Creature talk scripts// LANGUAGE field:  ENGLISH// STATE field: CHASING, RETREATING, ATTACKING, or KILLING// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD#if (ENGLISH,CHASING,HUMAN) say(I will catch you!);if (ENGLISH,CHASING,WIZARD) say(I will catch you!);#if (ENGLISH,CHASING,CLERIC) say(I will catch you!);#if (ENGLISH,CHASING,DRUID) say(I will catch you!);#if (ENGLISH,CHASING,FIGHTER) say(I will catch you!);#if (ENGLISH,CHASING,RANGER) say(I will catch you!);#if (ENGLISH,CHASING,ROGUE) say(I will catch you!);#if (ENGLISH,CHASING,PET) say(I will catch you!);#if (ENGLISH,RETREATING) say(Damn it all!);#if (ENGLISH,ATTACKING,HUMAN) say(You will bow before me!);#if (ENGLISH,ATTACKING,CLERIC) say(You will bow before me!);#if (ENGLISH,ATTACKING,WIZARD) say(You will bow before me!);#if (ENGLISH,ATTACKING,WIZARD) say(You will bow before me!);#if (ENGLISH,ATTACKING,FIGHTER) say(You will bow before me!);#if (ENGLISH,ATTACKING,PET) say(You will bow before me!);#if (ENGLISH,ATTACKING,PET) say(You will bow before me!);#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);#if (ENGLISH,KILLING,PET) say(Die!);#if (ENGLISH,HIDING,HUMAN) say(Hide? From me? You are dumber than you look.);#if (ENGLISH,JUST_HID,HUMAN) say(Ha ha ha!);
+// Lich
+
+SPEED=48;                // 35-1000 ... lower values are faster
+POISONOUS=0;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=600;           // 1-250
+STRENGTH=100;             // 1-250
+INTELLIGENCE=250;         // 1-250
+DEXTERITY=100;            // 1-250
+MAGIC_POINTS=500;         // 1-250
+MIN_GOLD=850;              // 0 - 100000
+MAX_GOLD=2200;             // 0 - 100000
+SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=10;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;        // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=80;         // 1 - 100
+POISON_IMMUNITY=TRUE;   // TRUE or FALSE
+LOCK=10;                  // 0 - 100
+MIN_DAMAGE=50;            // 0 - 250
+MAX_DAMAGE=70;           // 0 - 250
+LEVEL=16;
+TRACKING_LEVEL=16;
+SIZE=2;
+MAGERY_LEVEL=18;
+SPELLCAST_CHANCE=60;
+SELFHEAL_CHANCE=75;
+SELFHEAL_TRIGGER=200;
+
+#spell(1000,0,35);//FB
+#spell(1501,0,25);// chaos field
+#spell(331,0,10);// LB
+#spell(1010,0,20);//summon skells
+
+
+
+// Weapon Effectiveness
+
+#dagger(75);
+#holydagger(75);
+#blooddagger(75);
+#broadsword(75);
+#flail(75);
+#spear(75);
+#club(75);
+#shortbow(75);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+#silverkatana(150);
+
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+//#inventory(352,2,5); // 2 to 5 raw steaks
+#inventory(431,0,1); // crystal skull
+//#inventory(288,1,50); // 1 in 10 gold ring
+//#inventory(34,3,4); // 3 in 4 sickle
+//#inventory(280,0,1); // 1 in 10 bolt
+#inventory(294,0,10); // 0 to 10 ginseng
+#inventory(295,0,10); // 0 to 10 lotus flowers
+#inventory(296,0,10); // 0 to 10 mandrake roots
+#inventory(297,0,10); // 0 to 10 amber
+#inventory(298,0,10); // 0 to 10 garlic
+#inventory(299,0,10); // 0 to 10 volcanic ash
+#inventory(300,0,10); // 0 to 10 poison glands
+#inventory(301,0,10); // 0 to 10 coal
+#inventory(302,0,10); // 0 to 10 electric eels
+#inventory(275,0,5); // 0 to 5 dragon teeth
+
+
+// Creature talk scripts
+// LANGUAGE field:  ENGLISH
+// STATE field: CHASING, RETREATING, ATTACKING, or KILLING
+// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD
+
+#if (ENGLISH,CHASING,HUMAN) say(I will catch you!);
+if (ENGLISH,CHASING,WIZARD) say(I will catch you!);
+#if (ENGLISH,CHASING,CLERIC) say(I will catch you!);
+#if (ENGLISH,CHASING,DRUID) say(I will catch you!);
+#if (ENGLISH,CHASING,FIGHTER) say(I will catch you!);
+#if (ENGLISH,CHASING,RANGER) say(I will catch you!);
+#if (ENGLISH,CHASING,ROGUE) say(I will catch you!);
+#if (ENGLISH,CHASING,PET) say(I will catch you!);
+
+#if (ENGLISH,RETREATING) say(Damn it all!);
+
+#if (ENGLISH,ATTACKING,HUMAN) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,CLERIC) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,WIZARD) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,WIZARD) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,FIGHTER) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,PET) say(You will bow before me!);
+#if (ENGLISH,ATTACKING,PET) say(You will bow before me!);
+
+#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);
+#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);
+#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);
+#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);
+#if (ENGLISH,KILLING,HUMAN) say(Now you know real power!);
+#if (ENGLISH,KILLING,PET) say(Die!);
+
+#if (ENGLISH,HIDING,HUMAN) say(Hide? From me? You are dumber than you look.);
+
+#if (ENGLISH,JUST_HID,HUMAN) say(Ha ha ha!);

@@ -1,1 +1,116 @@
-// Ancient Forest DragonSPEED=50;                 // 35-1000 ... lower values are fasterPOISONOUS=3;              // 0-100 ... higher values are more poisonousHIT_POINTS=600;           // 1-250STRENGTH=200;             // 1-250INTELLIGENCE=200;         // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=5000;             // 0 - 100000MAX_GOLD=10000;             // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=15;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=85;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=10;                   // 0 - 100MIN_DAMAGE=180;            // 0 - 250MAX_DAMAGE=465;           // 0 - 250LEVEL=17;TRACKING_LEVEL=17;SIZE=3;MAGERY_LEVEL=15;SPELLCAST_CHANCE=15;#spell(1015,0,30);#spell(1504,0,50);#spell(1014,0,20);// Forest Dragon Speech// Creature talk scripts// LANGUAGE field:  ENGLISH// STATE field: JUST_HID, HIDING, CHASING, RETREATING, ATTACKING, or KILLING// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD#if (ENGLISH,CHASING,HUMAN) say(I have known these lands since before your ancestors, do you think you can escape?.);#if (ENGLISH,CHASING,HUMAN) say(In a thousand years none shall know where you died, save me.);#if (ENGLISH,CHASING,HUMAN) say(I witnessed the birth of these forests, do you think they shall give you cover?);#if (ENGLISH,CHASING,HUMAN) say(Return to me, human. I have long grown weary of the chase.);#if (ENGLISH,CHASING,WIZARD) say(Wizards were once wise... Is all that is left of that knowledge that you know you should flee?);#if (ENGLISH,CHASING,CLERIC) say(I wonder why a cleric came to me in the first place? To worship me as a god?);#if (ENGLISH,CHASING,DRUID) say(Once your kind could subjugate us, you realise now you cannot.);#if (ENGLISH,CHASING,FIGHTER) say(For all your prowess you run now. Run fighter, I am coming..);#if (ENGLISH,CHASING,RANGER) say(You seek to pierce my scales with your arrows? So optimistic.);#if (ENGLISH,CHASING,ROGUE) say(You had better hide quickly, I am ready to devour you.);#if (ENGLISH,CHASING,PET) say(Your master may regret sending you to your death, but no fear, soon you shall be together again.);#if (ENGLISH,RETREATING) say(Is the update ready yet? Stefan!);#if (ENGLISH,RETREATING) say(You have often wondered who ate all the pies human, it was I!)#if (ENGLISH,ATTACKING,HUMAN) say(This should be brief.);#if (ENGLISH,ATTACKING,HUMAN) say(I hunger for the great battles of my youth, this does not compare.);#if (ENGLISH,ATTACKING,HUMAN) say(You have time to run, for a moment longer.);#if (ENGLISH,ATTACKING,CLERIC) say(Have you learnt to resurrect yourself yet?);#if (ENGLISH,ATTACKING,WIZARD) say(Am I too close for your comfort?);#if (ENGLISH,ATTACKING,DRUID) say(I am master of nature, druid, you are just a petty manipulator.);#if (ENGLISH,ATTACKING,FIGHTER) say(You battle that which has lived millenia, I hope you have confidence I can shatter.;#if (ENGLISH,ATTACKING,RANGER) say(It was unwise of you to come to me. I will help remove that trait from your species.);#if (ENGLISH,ATTACKING,ROGUE) say(You have come to pick my teeth clean with your dagger? I thank you, but it is not needed.);#if (ENGLISH,ATTACKING,PET) say(This will not take long.);#if (ENGLISH,KILLING,HUMAN) say(The only outcome there could have been.);#if (ENGLISH,KILLING,HUMAN) say(Twelve thousand four hundred and... Oh I lose count.);#if (ENGLISH,KILLING,HUMAN) say(Your last mistake, human, tell a cleric so others may learn.);#if (ENGLISH,KILLING,HUMAN) say(I had hoped it would not be that easy.);#if (ENGLISH,KILLING,HUMAN) say(An inferior species in every way.);#if (ENGLISH,KILLING,PET) say(I have little pity for something so weak-willed.);#if (ENGLISH,KILLING,PET) say(Why it did not defy you before I cannot understand.);#if (ENGLISH,HIDING,HUMAN) say(I will find you, I have all the time in the world.);#if (ENGLISH,HIDING,HUMAN) say(It is well that you try to avoid me, but in vain.);#if (ENGLISH,HIDING,HUMAN) say(Reveal yourself and let it be over with.);#if (ENGLISH,JUST_HID,HUMAN) say(A feeble trick.);#if (ENGLISH,JUST_HID,HUMAN) say(It is only right that you try to evade me.);#if (ENGLISH,JUST_HID,HUMAN) say(Run... hide... die... You are at stage two now.);// Weapon Effectiveness#dagger(20);#holydagger(20);#blooddagger(20);#broadsword(75);#katana(75);#scimitar(75);#flail(50);#mace(50);#warhammer(60);#spear(70);#sickle(75);#shortbow(50);#longbow(50);#flamingsword(80);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,25,35); // raw steaks#inventory(275,15,30); // dragon teeth#inventory(379,20,32); // dragon scales#inventory(185,1,50); // green RoR#inventory(186,1,50); // purple RoR#inventory(181,1,50); // lt blue RoR#inventory(474,0,1); //dragon egg
+// Ancient Forest Dragon
+
+SPEED=50;                 // 35-1000 ... lower values are faster
+POISONOUS=3;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=600;           // 1-250
+STRENGTH=200;             // 1-250
+INTELLIGENCE=200;         // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=5000;             // 0 - 100000
+MAX_GOLD=10000;             // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=15;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=85;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=10;                   // 0 - 100
+MIN_DAMAGE=180;            // 0 - 250
+MAX_DAMAGE=465;           // 0 - 250
+LEVEL=17;
+TRACKING_LEVEL=17;
+SIZE=3;
+MAGERY_LEVEL=15;
+SPELLCAST_CHANCE=15;
+
+#spell(1015,0,30);
+#spell(1504,0,50);
+#spell(1014,0,20);
+
+
+// Forest Dragon Speech
+
+// Creature talk scripts
+// LANGUAGE field:  ENGLISH
+// STATE field: JUST_HID, HIDING, CHASING, RETREATING, ATTACKING, or KILLING
+// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD
+
+#if (ENGLISH,CHASING,HUMAN) say(I have known these lands since before your ancestors, do you think you can escape?.);
+#if (ENGLISH,CHASING,HUMAN) say(In a thousand years none shall know where you died, save me.);
+#if (ENGLISH,CHASING,HUMAN) say(I witnessed the birth of these forests, do you think they shall give you cover?);
+#if (ENGLISH,CHASING,HUMAN) say(Return to me, human. I have long grown weary of the chase.);
+#if (ENGLISH,CHASING,WIZARD) say(Wizards were once wise... Is all that is left of that knowledge that you know you should flee?);
+#if (ENGLISH,CHASING,CLERIC) say(I wonder why a cleric came to me in the first place? To worship me as a god?);
+#if (ENGLISH,CHASING,DRUID) say(Once your kind could subjugate us, you realise now you cannot.);
+#if (ENGLISH,CHASING,FIGHTER) say(For all your prowess you run now. Run fighter, I am coming..);
+#if (ENGLISH,CHASING,RANGER) say(You seek to pierce my scales with your arrows? So optimistic.);
+#if (ENGLISH,CHASING,ROGUE) say(You had better hide quickly, I am ready to devour you.);
+#if (ENGLISH,CHASING,PET) say(Your master may regret sending you to your death, but no fear, soon you shall be together again.);
+
+#if (ENGLISH,RETREATING) say(Is the update ready yet? Stefan!);
+#if (ENGLISH,RETREATING) say(You have often wondered who ate all the pies human, it was I!)
+
+
+#if (ENGLISH,ATTACKING,HUMAN) say(This should be brief.);
+#if (ENGLISH,ATTACKING,HUMAN) say(I hunger for the great battles of my youth, this does not compare.);
+#if (ENGLISH,ATTACKING,HUMAN) say(You have time to run, for a moment longer.);
+#if (ENGLISH,ATTACKING,CLERIC) say(Have you learnt to resurrect yourself yet?);
+#if (ENGLISH,ATTACKING,WIZARD) say(Am I too close for your comfort?);
+#if (ENGLISH,ATTACKING,DRUID) say(I am master of nature, druid, you are just a petty manipulator.);
+#if (ENGLISH,ATTACKING,FIGHTER) say(You battle that which has lived millenia, I hope you have confidence I can shatter.;
+#if (ENGLISH,ATTACKING,RANGER) say(It was unwise of you to come to me. I will help remove that trait from your species.);
+#if (ENGLISH,ATTACKING,ROGUE) say(You have come to pick my teeth clean with your dagger? I thank you, but it is not needed.);
+#if (ENGLISH,ATTACKING,PET) say(This will not take long.);
+
+#if (ENGLISH,KILLING,HUMAN) say(The only outcome there could have been.);
+#if (ENGLISH,KILLING,HUMAN) say(Twelve thousand four hundred and... Oh I lose count.);
+#if (ENGLISH,KILLING,HUMAN) say(Your last mistake, human, tell a cleric so others may learn.);
+#if (ENGLISH,KILLING,HUMAN) say(I had hoped it would not be that easy.);
+#if (ENGLISH,KILLING,HUMAN) say(An inferior species in every way.);
+#if (ENGLISH,KILLING,PET) say(I have little pity for something so weak-willed.);
+#if (ENGLISH,KILLING,PET) say(Why it did not defy you before I cannot understand.);
+#if (ENGLISH,HIDING,HUMAN) say(I will find you, I have all the time in the world.);
+#if (ENGLISH,HIDING,HUMAN) say(It is well that you try to avoid me, but in vain.);
+#if (ENGLISH,HIDING,HUMAN) say(Reveal yourself and let it be over with.);
+
+#if (ENGLISH,JUST_HID,HUMAN) say(A feeble trick.);
+#if (ENGLISH,JUST_HID,HUMAN) say(It is only right that you try to evade me.);
+#if (ENGLISH,JUST_HID,HUMAN) say(Run... hide... die... You are at stage two now.);
+
+
+// Weapon Effectiveness
+
+#dagger(20);
+#holydagger(20);
+#blooddagger(20);
+#broadsword(75);
+#katana(75);
+#scimitar(75);
+#flail(50);
+#mace(50);
+#warhammer(60);
+#spear(70);
+#sickle(75);
+#shortbow(50);
+#longbow(50);
+#flamingsword(80);
+
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,25,35); // raw steaks
+#inventory(275,15,30); // dragon teeth
+#inventory(379,20,32); // dragon scales
+#inventory(185,1,50); // green RoR
+#inventory(186,1,50); // purple RoR
+#inventory(181,1,50); // lt blue RoR
+#inventory(474,0,1); //dragon egg

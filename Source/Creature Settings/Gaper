@@ -1,1 +1,65 @@
-// Gaper SettingsSPEED=65;                 // 35-1000 ... lower values are fasterPOISONOUS=NA;             // 0-100 ... higher values are more poisonousHIT_POINTS=55;            // 1-250STRENGTH=50;              // 1-250INTELLIGENCE=150;         // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=150;          // 1-250MIN_GOLD=22;              // 0 - 100000 ... minimum dropped at deathMAX_GOLD=50;              // 0 - 100000 ... maximum dropped at deathSEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;          // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=20;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=20;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=10;          // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100 ... 0=no lock ... strength of lock on corpseMIN_DAMAGE=NA;            // 0 - 250 ... minimum damage done with successful hitMAX_DAMAGE=NA;            // 0 - 250 ... maximum damage done with successful hitLEVEL=9;TRACKING_LEVEL=9;SIZE=1;MAGERY_LEVEL=10;SPELLCAST_CHANCE=100;SELFHEAL_TRIGGER=15;#spell(1011,0,30);  //Chaos#spell(331,0,20);//LB#spell(339,0,10);//explosion#spell(330,0,10);//poison#spell(337,0,10);//disorient#spell(321,0,10);//weaken#spell(338,0,10);//paralyze// Weapon Effectivness#mace(75);#warhammer(75);#stave(75);#club(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item//#inventory(275,0,1); // 0 to 1 dragon teeth#inventory(294,0,5); // 0 to 5 ginseng#inventory(295,0,5); // 0 to 5 lotus flowers#inventory(296,0,5); // 0 to 5 mandrake roots#inventory(297,0,5); // 0 to 5 amber#inventory(298,0,5); // 0 to 5 garlic#inventory(299,0,3); // 0 to 5 volcanic ash#inventory(300,0,2); // 0 to 5 poison glands#inventory(301,0,5); // 0 to 5 coal#inventory(302,0,5); // 0 to 5 electric eels#inventory(352,2,5); // 2 to 5 raw steaks#inventory(380,5,10); // 5 to 10 gaper stalks#inventory(554,0,1); // gaper eye
+// Gaper Settings
+
+SPEED=65;                 // 35-1000 ... lower values are faster
+POISONOUS=NA;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=55;            // 1-250
+STRENGTH=50;              // 1-250
+INTELLIGENCE=150;         // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=150;          // 1-250
+MIN_GOLD=22;              // 0 - 100000 ... minimum dropped at death
+MAX_GOLD=50;              // 0 - 100000 ... maximum dropped at death
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;          // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=20;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=20;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=10;          // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100 ... 0=no lock ... strength of lock on corpse
+MIN_DAMAGE=NA;            // 0 - 250 ... minimum damage done with successful hit
+MAX_DAMAGE=NA;            // 0 - 250 ... maximum damage done with successful hit
+LEVEL=9;
+TRACKING_LEVEL=9;
+SIZE=1;
+MAGERY_LEVEL=10;
+SPELLCAST_CHANCE=100;
+SELFHEAL_TRIGGER=15;
+
+#spell(1011,0,30);  //Chaos
+#spell(331,0,20);//LB
+#spell(339,0,10);//explosion
+#spell(330,0,10);//poison
+#spell(337,0,10);//disorient
+#spell(321,0,10);//weaken
+#spell(338,0,10);//paralyze
+
+// Weapon Effectivness
+
+#mace(75);
+#warhammer(75);
+#stave(75);
+#club(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+//#inventory(275,0,1); // 0 to 1 dragon teeth
+#inventory(294,0,5); // 0 to 5 ginseng
+#inventory(295,0,5); // 0 to 5 lotus flowers
+#inventory(296,0,5); // 0 to 5 mandrake roots
+#inventory(297,0,5); // 0 to 5 amber
+#inventory(298,0,5); // 0 to 5 garlic
+#inventory(299,0,3); // 0 to 5 volcanic ash
+#inventory(300,0,2); // 0 to 5 poison glands
+#inventory(301,0,5); // 0 to 5 coal
+#inventory(302,0,5); // 0 to 5 electric eels
+#inventory(352,2,5); // 2 to 5 raw steaks
+#inventory(380,5,10); // 5 to 10 gaper stalks
+#inventory(554,0,1); // gaper eye

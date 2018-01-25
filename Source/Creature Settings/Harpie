@@ -1,1 +1,52 @@
-// Harpie SettingsSPEED=50;                 // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=60;            // 1-250STRENGTH=60;              // 1-250INTELLIGENCE=50;          // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=10;              // 0 - 100000MAX_GOLD=18;              // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=85;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=4;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=30;          // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=4;             // 0 - 250MAX_DAMAGE=7;             // 0 - 250LEVEL=4; TRACKING_LEVEL=4;SIZE=1;// Weapon Effectiveness#katana(90);#scimitar(90);#longsword(90);#mace(90);#warhammer(90);#sickle(90);#stave(90);#longbow(75);#longsword(75);#battleaxe(75);#glaive(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,2,4); // 2 to 4 raw steaks#inventory(291,30,50); // 30 to 50 feathers#inventory(411,0,1); // 0 to 1 red egg#inventory(559,0,1); // beak
+// Harpie Settings
+
+SPEED=50;                 // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=60;            // 1-250
+STRENGTH=60;              // 1-250
+INTELLIGENCE=50;          // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=10;              // 0 - 100000
+MAX_GOLD=18;              // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=85;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=4;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=30;          // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=4;             // 0 - 250
+MAX_DAMAGE=7;             // 0 - 250
+LEVEL=4; 
+TRACKING_LEVEL=4;
+SIZE=1;
+
+// Weapon Effectiveness
+
+#katana(90);
+#scimitar(90);
+#longsword(90);
+#mace(90);
+#warhammer(90);
+#sickle(90);
+#stave(90);
+#longbow(75);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,2,4); // 2 to 4 raw steaks
+#inventory(291,30,50); // 30 to 50 feathers
+#inventory(411,0,1); // 0 to 1 red egg
+#inventory(559,0,1); // beak

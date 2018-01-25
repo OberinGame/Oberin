@@ -1,1 +1,52 @@
-// Brown Dog SettingsSPEED=80;                // 35-1000 ... lower values are fasterPOISONOUS=0;             // 0-100 ... higher values are more poisonousHIT_POINTS=10;           // 1-250STRENGTH=10;             // 1-250INTELLIGENCE=25;         // 1-250DEXTERITY=65;            // 1-250MAGIC_POINTS=NA;         // 1-250MIN_GOLD=0;              // 0 - 100000MAX_GOLD=0;              // 0 - 100000SEEK_GOLD=FALSE;         // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=100;        // 0 - 100 ... lower is more resistentTAMING_LEVEL=2;          // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=8;         // 1 - 100POISON_IMMUNITY=FALSE;   // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=4;            // 0 - 250MAX_DAMAGE=8;            // 0 - 250LEVEL=2;TRACKING_LEVEL=2;SIZE=0;// Weapon Effectivness#katana(90);#scimitar(100);#longsword(100);#mace(90);#warhammer(90);#sickle(90);#stave(90);#longbow(75);// 75 #longsword(75);#battleaxe(100);#glaive(100);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,1,2); // 1 to 3 raw steaks#inventory(311,1,1); // 2 to 3 furs
+// Brown Dog Settings
+
+SPEED=80;                // 35-1000 ... lower values are faster
+POISONOUS=0;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=10;           // 1-250
+STRENGTH=10;             // 1-250
+INTELLIGENCE=25;         // 1-250
+DEXTERITY=65;            // 1-250
+MAGIC_POINTS=NA;         // 1-250
+MIN_GOLD=0;              // 0 - 100000
+MAX_GOLD=0;              // 0 - 100000
+SEEK_GOLD=FALSE;         // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=100;        // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=2;          // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=8;         // 1 - 100
+POISON_IMMUNITY=FALSE;   // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=4;            // 0 - 250
+MAX_DAMAGE=8;            // 0 - 250
+LEVEL=2;
+TRACKING_LEVEL=2;
+SIZE=0;
+
+// Weapon Effectivness
+
+#katana(90);
+#scimitar(100);
+#longsword(100);
+#mace(90);
+#warhammer(90);
+#sickle(90);
+#stave(90);
+#longbow(75);// 75 
+#longsword(75);
+#battleaxe(100);
+#glaive(100);
+
+
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,1,2); // 1 to 3 raw steaks
+#inventory(311,1,1); // 2 to 3 furs

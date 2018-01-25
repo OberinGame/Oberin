@@ -1,1 +1,101 @@
-// Bone Mage SettingsSPEED=70;                // 35-1000 ... lower values are fasterPOISONOUS=NA;            // 0-100 ... higher values are more poisonousHIT_POINTS=75;           // 1-250STRENGTH=75;             // 1-250INTELLIGENCE=80;         // 1-250DEXTERITY=50;            // 1-250MAGIC_POINTS=300;         // 1-250MIN_GOLD=15;             // 0 - 100000MAX_GOLD=50;             // 0 - 100000SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=20;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=20;        // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=30;         // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=3;                  // 0 - 100MIN_DAMAGE=NA;           // 0 - 250MAX_DAMAGE=NA;           // 0 - 250LEVEL=10;TRACKING_LEVEL=10;SIZE=1;MAGERY_LEVEL=10;SPELLCAST_CHANCE=100;SELFHEAL_CHANCE=75;SELFHEAL_TRIGGER=20;#spell(331,0,20);//LB//#spell(339,0,10);//explosion#spell(330,0,20);//posion#spell(337,0,10);//disorient#spell(338,0,20);//paralyze//#spell(321,0,10);//weaken#spell(1010,0,30);//Skel spawn#if (ENGLISH,ATTACKING,HUMAN) say(Feed my power, weakling!);#if (ENGLISH,ATTACKING,HUMAN) say(The pain will be glorious.);//#if (ENGLISH,ATTACKING,CLERIC) say(Run cleric, run coward.);#if (ENGLISH,ATTACKING,WIZARD) say(You humans are no match for my magic.);#if (ENGLISH,ATTACKING,WIZARD) say(You think that is magic?);#if (ENGLISH,ATTACKING,FIGHTER) say(Burn.. Burn..  BURN!);#if (ENGLISH,ATTACKING,PET) say(This terrible creature must die!);#if (ENGLISH,ATTACKING,PET) say(Your animal needs a lesson in pain!);//#if (ENGLISH,CHASING,HUMAN) say(You can try to run.);#if (ENGLISH,CHASING,HUMAN) say(I see you human.);#if (ENGLISH,CHASING,HUMAN) say(Leave now and I might spare you.);#if (ENGLISH,CHASING,WIZARD) say(Some wizard you are.);#if (ENGLISH,CHASING,CLERIC) say(Meet your God.);#if (ENGLISH,CHASING,DRUID) say(Your soul belongs to me.);#if (ENGLISH,CHASING,FIGHTER) say(You must feel the burn.);#if (ENGLISH,CHASING,RANGER) say(You filthy human);#if (ENGLISH,CHASING,ROGUE) say(You can not hide.);#if (ENGLISH,CHASING,PET) say(I must punish your animal.);#if (ENGLISH,KILLING,HUMAN) say(Your soul will feed me.);#if (ENGLISH,KILLING,PET) say(Ah, tasty spirit that animal had.);#if (ENGLISH,HIDING,HUMAN) say(You think I wont find you?);#if (ENGLISH,JUST_HID,HUMAN) say(Do not try to hide.);//#if (ENGLISH,RETREATING) say(End my suffering... if you dare!);// Weapon Effectiveness#dagger(75);#holydagger(100);#blooddagger(75);#broadsword(75);#spear(75);#shortbow(50);#longbow(50);#longsword(75);#glaive(75);#mace(110);#warhammer(110);#flail(110);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(294,0,10); // 0 to 10 ginseng#inventory(295,0,10); // 0 to 10 lotus flowers#inventory(296,0,10); // 0 to 10 mandrake roots#inventory(297,0,10); // 0 to 10 amber#inventory(298,0,10); // 0 to 10 garlic#inventory(299,0,10); // 0 to 10 volcanic ash#inventory(300,0,10); // 0 to 10 poison glands#inventory(301,0,10); // 0 to 10 coal#inventory(302,0,10); // 0 to 10 electric eels#inventory(378,1,1); // 1 skull#inventory(558,0,1); // staff
+// Bone Mage Settings
+
+SPEED=70;                // 35-1000 ... lower values are faster
+POISONOUS=NA;            // 0-100 ... higher values are more poisonous
+HIT_POINTS=75;           // 1-250
+STRENGTH=75;             // 1-250
+INTELLIGENCE=80;         // 1-250
+DEXTERITY=50;            // 1-250
+MAGIC_POINTS=300;         // 1-250
+MIN_GOLD=15;             // 0 - 100000
+MAX_GOLD=50;             // 0 - 100000
+SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=20;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=20;        // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=30;         // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=3;                  // 0 - 100
+MIN_DAMAGE=NA;           // 0 - 250
+MAX_DAMAGE=NA;           // 0 - 250
+LEVEL=10;
+TRACKING_LEVEL=10;
+SIZE=1;
+MAGERY_LEVEL=10;
+SPELLCAST_CHANCE=100;
+SELFHEAL_CHANCE=75;
+SELFHEAL_TRIGGER=20;
+
+#spell(331,0,20);//LB
+//#spell(339,0,10);//explosion
+#spell(330,0,20);//posion
+#spell(337,0,10);//disorient
+#spell(338,0,20);//paralyze
+//#spell(321,0,10);//weaken
+#spell(1010,0,30);//Skel spawn
+
+
+#if (ENGLISH,ATTACKING,HUMAN) say(Feed my power, weakling!);
+#if (ENGLISH,ATTACKING,HUMAN) say(The pain will be glorious.);
+//#if (ENGLISH,ATTACKING,CLERIC) say(Run cleric, run coward.);
+#if (ENGLISH,ATTACKING,WIZARD) say(You humans are no match for my magic.);
+#if (ENGLISH,ATTACKING,WIZARD) say(You think that is magic?);
+#if (ENGLISH,ATTACKING,FIGHTER) say(Burn.. Burn..  BURN!);
+#if (ENGLISH,ATTACKING,PET) say(This terrible creature must die!);
+#if (ENGLISH,ATTACKING,PET) say(Your animal needs a lesson in pain!);
+
+//#if (ENGLISH,CHASING,HUMAN) say(You can try to run.);
+#if (ENGLISH,CHASING,HUMAN) say(I see you human.);
+#if (ENGLISH,CHASING,HUMAN) say(Leave now and I might spare you.);
+#if (ENGLISH,CHASING,WIZARD) say(Some wizard you are.);
+#if (ENGLISH,CHASING,CLERIC) say(Meet your God.);
+#if (ENGLISH,CHASING,DRUID) say(Your soul belongs to me.);
+#if (ENGLISH,CHASING,FIGHTER) say(You must feel the burn.);
+#if (ENGLISH,CHASING,RANGER) say(You filthy human);
+#if (ENGLISH,CHASING,ROGUE) say(You can not hide.);
+#if (ENGLISH,CHASING,PET) say(I must punish your animal.);
+
+#if (ENGLISH,KILLING,HUMAN) say(Your soul will feed me.);
+#if (ENGLISH,KILLING,PET) say(Ah, tasty spirit that animal had.);
+
+#if (ENGLISH,HIDING,HUMAN) say(You think I wont find you?);
+#if (ENGLISH,JUST_HID,HUMAN) say(Do not try to hide.);
+
+//#if (ENGLISH,RETREATING) say(End my suffering... if you dare!);
+
+// Weapon Effectiveness
+
+#dagger(75);
+#holydagger(100);
+#blooddagger(75);
+#broadsword(75);
+#spear(75);
+#shortbow(50);
+#longbow(50);
+#longsword(75);
+#glaive(75);
+#mace(110);
+#warhammer(110);
+#flail(110);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(294,0,10); // 0 to 10 ginseng
+#inventory(295,0,10); // 0 to 10 lotus flowers
+#inventory(296,0,10); // 0 to 10 mandrake roots
+#inventory(297,0,10); // 0 to 10 amber
+#inventory(298,0,10); // 0 to 10 garlic
+#inventory(299,0,10); // 0 to 10 volcanic ash
+#inventory(300,0,10); // 0 to 10 poison glands
+#inventory(301,0,10); // 0 to 10 coal
+#inventory(302,0,10); // 0 to 10 electric eels
+#inventory(378,1,1); // 1 skull
+#inventory(558,0,1); // staff

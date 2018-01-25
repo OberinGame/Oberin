@@ -1,1 +1,50 @@
-// Centaur SettingsSPEED=45;                 // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=95;            // 1-250STRENGTH=95;              // 1-250INTELLIGENCE=95;          // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=5;               // 0 - 100000MAX_GOLD=25;              // 0 - 100000SEEK_GOLD=FALSE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;        // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=80;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;         // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=35;          // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=5;             // 0 - 250MAX_DAMAGE=12;            // 0 - 250LEVEL=10;TRACKING_LEVEL=10;SIZE=1;// Weapon Effectiveness#dagger(75);#holydagger(75);#blooddagger(75);#broadsword(75);#flail(75);#spear(75);#club(75);#shortbow(75);#longsword(75);#battleaxe(75);#glaive(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,2,5); // 2 to 5 raw steaks#inventory(293,2,3); // 2 to 3 leather hides#inventory(502,1,1); // vial of blood
+// Centaur Settings
+
+SPEED=45;                 // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=95;            // 1-250
+STRENGTH=95;              // 1-250
+INTELLIGENCE=95;          // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=5;               // 0 - 100000
+MAX_GOLD=25;              // 0 - 100000
+SEEK_GOLD=FALSE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;        // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=80;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;         // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=35;          // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=5;             // 0 - 250
+MAX_DAMAGE=12;            // 0 - 250
+LEVEL=10;
+TRACKING_LEVEL=10;
+SIZE=1;
+// Weapon Effectiveness
+
+#dagger(75);
+#holydagger(75);
+#blooddagger(75);
+#broadsword(75);
+#flail(75);
+#spear(75);
+#club(75);
+#shortbow(75);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,2,5); // 2 to 5 raw steaks
+#inventory(293,2,3); // 2 to 3 leather hides
+#inventory(502,1,1); // vial of blood

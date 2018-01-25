@@ -1,1 +1,52 @@
-// Gooey SettingsSPEED=140;                 // 35-1000 ... lower values are fasterPOISONOUS=30;              // 0-100 ... higher values are more poisonousHIT_POINTS=60;            // 1-250STRENGTH=95;              // 1-250INTELLIGENCE=20;          // 1-250DEXTERITY=20;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=50;               // 0 - 100000MAX_GOLD=300;              // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=20;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=7;         // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=45;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=10;             // 0 - 250MAX_DAMAGE=15;            // 0 - 250LEVEL=7;TRACKING_LEVEL=7;SIZE=1;// Weapon Effectiveness#dagger(75);#holydagger(75);#blooddagger(75);#broadsword(75);#flail(80);#spear(90);#club(75);#shortbow(20);#longbow(20);#longsword(75);#battleaxe(75);#glaive(90);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(274,2,5); // 2 to 5 Bottles of poison#inventory(439,1,500); // RLP#inventory(569,0,1); //goo
+// Gooey Settings
+
+SPEED=140;                 // 35-1000 ... lower values are faster
+POISONOUS=30;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=60;            // 1-250
+STRENGTH=95;              // 1-250
+INTELLIGENCE=20;          // 1-250
+DEXTERITY=20;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=50;               // 0 - 100000
+MAX_GOLD=300;              // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=20;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=7;         // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=45;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=10;             // 0 - 250
+MAX_DAMAGE=15;            // 0 - 250
+LEVEL=7;
+TRACKING_LEVEL=7;
+SIZE=1;
+
+// Weapon Effectiveness
+
+#dagger(75);
+#holydagger(75);
+#blooddagger(75);
+#broadsword(75);
+#flail(80);
+#spear(90);
+#club(75);
+#shortbow(20);
+#longbow(20);
+#longsword(75);
+#battleaxe(75);
+#glaive(90);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(274,2,5); // 2 to 5 Bottles of poison
+#inventory(439,1,500); // RLP
+#inventory(569,0,1); //goo

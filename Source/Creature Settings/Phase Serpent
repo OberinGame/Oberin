@@ -1,1 +1,66 @@
-// Phase Serpent SettingsSPEED=50;                // 35-1000 ... lower values are fasterPOISONOUS=0;             // 0-100 ... higher values are more poisonousHIT_POINTS=400;          // 1-250STRENGTH=175;            // 1-250INTELLIGENCE=60;         // 1-250DEXTERITY=50;            // 1-250MAGIC_POINTS=NA;         // 1-250MIN_GOLD=850;             // 0 - 100000MAX_GOLD=1200;            // 0 - 100000SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=100;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;          // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=100;         // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=65;           // 0 - 250MAX_DAMAGE=100;           // 0 - 250LEVEL=13;TRACKING_LEVEL=13;SIZE=2;// Weapon Effectiveness#dagger(1);#holydagger(1);#blooddagger(1);#broadsword(1);#katana(1);#scimitar(1);#flail(1);#mace(1);#warhammer(1);#battleaxe (1);#stave (1);#spear(1);#sickle(1);#glaive (1)#shortbow(1);#longbow (1);#neptunestrident(5);#flamingsword (100);#frostaxe (100);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,6,10); // 6 to 10 raw steaks#inventory(284,0,5); // 0 to 5 diamonds#inventory(285,0,5); // 0 to 5 rubies#inventory(458,0,5); // 0 to 5 pure black crystals#inventory(498,0,1); // zionidic crysyal#inventory(766,0,1); // black egg
+// Phase Serpent Settings
+
+SPEED=50;                // 35-1000 ... lower values are faster
+POISONOUS=0;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=400;          // 1-250
+STRENGTH=175;            // 1-250
+INTELLIGENCE=60;         // 1-250
+DEXTERITY=50;            // 1-250
+MAGIC_POINTS=NA;         // 1-250
+MIN_GOLD=850;             // 0 - 100000
+MAX_GOLD=1200;            // 0 - 100000
+SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=100;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;          // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=100;         // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=65;           // 0 - 250
+MAX_DAMAGE=100;           // 0 - 250
+LEVEL=13;
+TRACKING_LEVEL=13;
+SIZE=2;
+
+// Weapon Effectiveness
+
+#dagger(1);
+#holydagger(1);
+#blooddagger(1);
+#broadsword(1);
+#katana(1);
+#scimitar(1);
+#flail(1);
+#mace(1);
+#warhammer(1);
+
+#battleaxe (1);
+#stave (1);
+#spear(1);
+#sickle(1);
+
+#glaive (1)
+#shortbow(1);
+
+#longbow (1);
+#neptunestrident(5);
+
+#flamingsword (100);
+#frostaxe (100);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,6,10); // 6 to 10 raw steaks
+#inventory(284,0,5); // 0 to 5 diamonds
+#inventory(285,0,5); // 0 to 5 rubies
+#inventory(458,0,5); // 0 to 5 pure black crystals
+#inventory(498,0,1); // zionidic crysyal
+#inventory(766,0,1); // black egg

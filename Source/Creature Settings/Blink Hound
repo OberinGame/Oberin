@@ -1,1 +1,43 @@
-// Blink Hound SettingsSPEED=65;                 // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=60;             // 1-250STRENGTH=50;               // 1-250INTELLIGENCE=25;           // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=100;               // 0 - 100000MAX_GOLD=300;               // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=15;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=8;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=20;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=12;             // 0 - 250MAX_DAMAGE=18;             // 0 - 250LEVEL=8;TRACKING_LEVEL=8;SIZE=1;#shortbow(20);#longbow(20);#longsword(75);#battleaxe(75);#glaive(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,2,3); // 1 steak#inventory(497,1,1); // 1 fur//#inventory(371,1,1); // 1 rat tail
+// Blink Hound Settings
+
+SPEED=65;                 // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=60;             // 1-250
+STRENGTH=50;               // 1-250
+INTELLIGENCE=25;           // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=100;               // 0 - 100000
+MAX_GOLD=300;               // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=15;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=8;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=20;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=12;             // 0 - 250
+MAX_DAMAGE=18;             // 0 - 250
+LEVEL=8;
+TRACKING_LEVEL=8;
+SIZE=1;
+
+#shortbow(20);
+#longbow(20);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,2,3); // 1 steak
+#inventory(497,1,1); // 1 fur
+//#inventory(371,1,1); // 1 rat tail

@@ -1,1 +1,50 @@
-// Earth Elemental settingsSPEED=80;                // 35-1000 ... lower values are fasterPOISONOUS=0;             // 0-100 ... higher values are more poisonousHIT_POINTS=75;           // 1-250STRENGTH=90;             // 1-250INTELLIGENCE=60;         // 1-250DEXTERITY=30;            // 1-250MAGIC_POINTS=NA;         // 1-250MIN_GOLD=15;             // 0 - 100000MAX_GOLD=32;             // 0 - 100000SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=80;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=5;          // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=5;          // 1 - 100POISON_IMMUNITY=TRUE;   // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=8;            // 0 - 250MAX_DAMAGE=13;            // 0 - 250LEVEL=6;TRACKING_LEVEL=6;SIZE=1;// Weapon Effectiveness#dagger(100);#holydagger(75);#blooddagger(75);#broadsword(100);#flail(125);#spear(120);#club(100);#shortbow(75);#longsword(75);#battleaxe(100);#glaive(125);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(555,0,2); // 0 to 2 elemental dust
+// Earth Elemental settings
+
+SPEED=80;                // 35-1000 ... lower values are faster
+POISONOUS=0;             // 0-100 ... higher values are more poisonous
+HIT_POINTS=75;           // 1-250
+STRENGTH=90;             // 1-250
+INTELLIGENCE=60;         // 1-250
+DEXTERITY=30;            // 1-250
+MAGIC_POINTS=NA;         // 1-250
+MIN_GOLD=15;             // 0 - 100000
+MAX_GOLD=32;             // 0 - 100000
+SEEK_GOLD=TRUE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=80;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=5;          // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=5;          // 1 - 100
+POISON_IMMUNITY=TRUE;   // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=8;            // 0 - 250
+MAX_DAMAGE=13;            // 0 - 250
+LEVEL=6;
+TRACKING_LEVEL=6;
+SIZE=1;
+
+
+// Weapon Effectiveness
+
+#dagger(100);
+#holydagger(75);
+#blooddagger(75);
+#broadsword(100);
+#flail(125);
+#spear(120);
+#club(100);
+#shortbow(75);
+#longsword(75);
+#battleaxe(100);
+#glaive(125);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(555,0,2); // 0 to 2 elemental dust

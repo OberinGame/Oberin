@@ -1,1 +1,107 @@
-// Giant SettingsSPEED=85;                 // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=220;           // 1-250STRENGTH=200;             // 1-250INTELLIGENCE=70;          // 1-250DEXTERITY=40;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=882;              // 0 - 100000MAX_GOLD=2812;              // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=25;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=25;         // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=70;          // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=43;            // 0 - 250MAX_DAMAGE=60;            // 0 - 250LEVEL=10;TRACKING_LEVEL=10;SIZE=2;// Weapon Effectivness#dagger(50);#holydagger(50);#blooddagger(50);#broadsword(50);#katana(75);#scimitar(75);#flail(50);#mace(75);#warhammer(75);#spear(50);#sickle(75);#shortbow(50);#flamingsword(150);#frostaxe(10);//#if (ENGLISH,ATTACKING,HUMAN) say(Me crush tiny skull.);//#if (ENGLISH,ATTACKING,HUMAN) say(You die now.);//#if (ENGLISH,ATTACKING,HUMAN) say(Me eat you.);//#if (ENGLISH,ATTACKING,HUMAN) say(Arrrrhhhg!);//#if (ENGLISH,ATTACKING,CLERIC) say(You die fast.);//#if (ENGLISH,ATTACKING,WIZARD) say(Sparkles hurt!);//#if (ENGLISH,ATTACKING,WIZARD) say(Don't do that.);//#if (ENGLISH,ATTACKING,FIGHTER) say(Tough meat.);//#if (ENGLISH,ATTACKING,PET) say(Your pet don't like me.);//#if (ENGLISH,ATTACKING,PET) say(Die now.);//#if (ENGLISH,ATTACKING,DRUID) say(Can't tame me.);//#if (ENGLISH,RETREATING) say(Noooo!);//#if (ENGLISH,RETREATING) say(Me run now.);//#if (ENGLISH,CHASING,HUMAN) say(Slow down.);//#if (ENGLISH,CHASING,HUMAN) say(Come here food.);//#if (ENGLISH,KILLING,HUMAN) say(Food ready.);//#if (ENGLISH,KILLING,HUMAN) say(Meal time.);//#if (ENGLISH,KILLING,HUMAN) say(Mmmmmm... human.);//#if (ENGLISH,HIDING,HUMAN) say(Where dinner go?);//#if (ENGLISH,JUST_HID,HUMAN) say(Hide and me seek.);#if (ENGLISH,ATTACKING,HUMAN) say(Human break easy.); #if (ENGLISH,ATTACKING,HUMAN) say(We win war!); #if (ENGLISH,ATTACKING,HUMAN) say(Masters want you dead!); #if (ENGLISH,ATTACKING,HUMAN) say(Arrrrhhhg!); #if (ENGLISH,ATTACKING,CLERIC) say(Break like icicle.); #if (ENGLISH,ATTACKING,WIZARD) say(Lightning not scare me!); #if (ENGLISH,ATTACKING,WIZARD) say(No fire from dis wizard!); #if (ENGLISH,ATTACKING,WIZARD) say(Me strong! You weak!.); #if (ENGLISH,ATTACKING,FIGHTER) say(Metal human still die.); #if (ENGLISH,ATTACKING,PET) say(Stupid animal dead soon.); #if (ENGLISH,ATTACKING,PET) say(This make good dinner!); #if (ENGLISH,ATTACKING,DRUID) say(I eat you and pet!); #if (ENGLISH,RETREATING) say(We be back!); #if (ENGLISH,RETREATING) say(Human strong today!); #if (ENGLISH,CHASING,HUMAN) say(Human scared to fight!); #if (ENGLISH,CHASING,HUMAN) say(Masters will win!); #if (ENGLISH,KILLING,HUMAN) say(This one dead.); #if (ENGLISH,KILLING,HUMAN) say(Me do good!); #if (ENGLISH,KILLING,HUMAN) say(Dis one look tasty.); #if (ENGLISH,HIDING,HUMAN) say(Little thing hide good.); #if (ENGLISH,JUST_HID,HUMAN) say(Where you go? Come back!);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,10,12); // 10 to 12 steaks#inventory(195,1,3); // frost axe#inventory(436,1,500); // lesser heal ring#inventory(566,0,1); //giant heart
+// Giant Settings
+
+SPEED=85;                 // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=220;           // 1-250
+STRENGTH=200;             // 1-250
+INTELLIGENCE=70;          // 1-250
+DEXTERITY=40;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=882;              // 0 - 100000
+MAX_GOLD=2812;              // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=25;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=25;         // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=70;          // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=43;            // 0 - 250
+MAX_DAMAGE=60;            // 0 - 250
+LEVEL=10;
+TRACKING_LEVEL=10;
+SIZE=2;
+// Weapon Effectivness
+
+#dagger(50);
+#holydagger(50);
+#blooddagger(50);
+#broadsword(50);
+#katana(75);
+#scimitar(75);
+#flail(50);
+#mace(75);
+#warhammer(75);
+#spear(50);
+#sickle(75);
+#shortbow(50);
+#flamingsword(150);
+#frostaxe(10);
+
+
+//#if (ENGLISH,ATTACKING,HUMAN) say(Me crush tiny skull.);
+//#if (ENGLISH,ATTACKING,HUMAN) say(You die now.);
+//#if (ENGLISH,ATTACKING,HUMAN) say(Me eat you.);
+//#if (ENGLISH,ATTACKING,HUMAN) say(Arrrrhhhg!);
+//#if (ENGLISH,ATTACKING,CLERIC) say(You die fast.);
+//#if (ENGLISH,ATTACKING,WIZARD) say(Sparkles hurt!);
+//#if (ENGLISH,ATTACKING,WIZARD) say(Don't do that.);
+//#if (ENGLISH,ATTACKING,FIGHTER) say(Tough meat.);
+//#if (ENGLISH,ATTACKING,PET) say(Your pet don't like me.);
+//#if (ENGLISH,ATTACKING,PET) say(Die now.);
+//#if (ENGLISH,ATTACKING,DRUID) say(Can't tame me.);
+
+//#if (ENGLISH,RETREATING) say(Noooo!);
+//#if (ENGLISH,RETREATING) say(Me run now.);
+
+//#if (ENGLISH,CHASING,HUMAN) say(Slow down.);
+//#if (ENGLISH,CHASING,HUMAN) say(Come here food.);
+
+//#if (ENGLISH,KILLING,HUMAN) say(Food ready.);
+//#if (ENGLISH,KILLING,HUMAN) say(Meal time.);
+//#if (ENGLISH,KILLING,HUMAN) say(Mmmmmm... human.);
+
+//#if (ENGLISH,HIDING,HUMAN) say(Where dinner go?);
+
+//#if (ENGLISH,JUST_HID,HUMAN) say(Hide and me seek.);
+#if (ENGLISH,ATTACKING,HUMAN) say(Human break easy.); 
+#if (ENGLISH,ATTACKING,HUMAN) say(We win war!); 
+#if (ENGLISH,ATTACKING,HUMAN) say(Masters want you dead!); 
+#if (ENGLISH,ATTACKING,HUMAN) say(Arrrrhhhg!); 
+#if (ENGLISH,ATTACKING,CLERIC) say(Break like icicle.); 
+#if (ENGLISH,ATTACKING,WIZARD) say(Lightning not scare me!); 
+#if (ENGLISH,ATTACKING,WIZARD) say(No fire from dis wizard!); 
+#if (ENGLISH,ATTACKING,WIZARD) say(Me strong! You weak!.); 
+#if (ENGLISH,ATTACKING,FIGHTER) say(Metal human still die.); 
+#if (ENGLISH,ATTACKING,PET) say(Stupid animal dead soon.); 
+#if (ENGLISH,ATTACKING,PET) say(This make good dinner!); 
+#if (ENGLISH,ATTACKING,DRUID) say(I eat you and pet!); 
+
+#if (ENGLISH,RETREATING) say(We be back!); 
+#if (ENGLISH,RETREATING) say(Human strong today!); 
+
+#if (ENGLISH,CHASING,HUMAN) say(Human scared to fight!); 
+#if (ENGLISH,CHASING,HUMAN) say(Masters will win!); 
+
+#if (ENGLISH,KILLING,HUMAN) say(This one dead.); 
+#if (ENGLISH,KILLING,HUMAN) say(Me do good!); 
+#if (ENGLISH,KILLING,HUMAN) say(Dis one look tasty.); 
+
+#if (ENGLISH,HIDING,HUMAN) say(Little thing hide good.); 
+
+#if (ENGLISH,JUST_HID,HUMAN) say(Where you go? Come back!);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,10,12); // 10 to 12 steaks
+#inventory(195,1,3); // frost axe
+#inventory(436,1,500); // lesser heal ring
+#inventory(566,0,1); //giant heart

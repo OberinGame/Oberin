@@ -1,1 +1,53 @@
-// Giant SpiderSPEED=60;                // 35-1000 ... lower values are fasterPOISONOUS=33;            // 0-100 ... higher values are more poisonousHIT_POINTS=80;           // 1-250STRENGTH=80;             // 1-250INTELLIGENCE=30;         // 1-250DEXTERITY=50;            // 1-250MAGIC_POINTS=NA;         // 1-250MIN_GOLD=0;              // 0 - 100000MAX_GOLD=0;              // 0 - 100000SEEK_GOLD=FALSE;         // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=100;        // 0 - 100 ... lower is more resistentTAMING_LEVEL=6;          // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=40;         // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                  // 0 - 100MIN_DAMAGE=5;            // 0 - 250MAX_DAMAGE=10;           // 0 - 250LEVEL=6;TRACKING_LEVEL=6;SIZE=1;// Weapon Effectiveness#dagger(75);#holydagger(75);#blooddagger(75);#broadsword(75);#flail(75);#spear(75);#club(75);#shortbow(75);#longsword(75);#battleaxe(75);#glaive(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(300,2,4); // 2 to 4 poison glands#inventory(421,2,2); // 2 fangs#inventory(562,0,6); //legs
+// Giant Spider
+
+SPEED=60;                // 35-1000 ... lower values are faster
+POISONOUS=33;            // 0-100 ... higher values are more poisonous
+HIT_POINTS=80;           // 1-250
+STRENGTH=80;             // 1-250
+INTELLIGENCE=30;         // 1-250
+DEXTERITY=50;            // 1-250
+MAGIC_POINTS=NA;         // 1-250
+MIN_GOLD=0;              // 0 - 100000
+MAX_GOLD=0;              // 0 - 100000
+SEEK_GOLD=FALSE;         // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;        // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;      // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=100;        // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=6;          // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=40;         // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                  // 0 - 100
+MIN_DAMAGE=5;            // 0 - 250
+MAX_DAMAGE=10;           // 0 - 250
+LEVEL=6;
+TRACKING_LEVEL=6;
+SIZE=1;
+
+
+
+// Weapon Effectiveness
+
+#dagger(75);
+#holydagger(75);
+#blooddagger(75);
+#broadsword(75);
+#flail(75);
+#spear(75);
+#club(75);
+#shortbow(75);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(300,2,4); // 2 to 4 poison glands
+#inventory(421,2,2); // 2 fangs
+#inventory(562,0,6); //legs

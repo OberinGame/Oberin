@@ -1,1 +1,62 @@
-// Ancient Abyss Dragon SettingsSPEED=52;                 // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=1000;           // 1-250STRENGTH=220;             // 1-250INTELLIGENCE=200;         // 1-250DEXTERITY=200;            // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=800000;             // 0 - 100000MAX_GOLD=999000;             // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=20;          // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=88;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=12;                   // 0 - 100MIN_DAMAGE=1000;            // 0 - 250MAX_DAMAGE=3500;           // 0 - 250LEVEL=20;TRACKING_LEVEL=20;SIZE=3;// Red Dragon Speech// Creature talk scripts// LANGUAGE field:  ENGLISH// STATE field: JUST_HID, HIDING, CHASING, RETREATING, ATTACKING, or KILLING// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD// Weapon Effectiveness#dagger(50);#holydagger(50);#blooddagger(50);#broadsword(50);#katana(75);#scimitar(75);#flail(50);#mace(75);#warhammer(75);#spear(50);#sickle(75);#shortbow(50);#flamingsword(25);#frostaxe(125);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,20,30); // raw steaks#inventory(275,10,25); // dragon teeth#inventory(379,15,25); // dragon scales
+// Ancient Abyss Dragon Settings
+
+SPEED=52;                 // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=1000;           // 1-250
+STRENGTH=220;             // 1-250
+INTELLIGENCE=200;         // 1-250
+DEXTERITY=200;            // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=800000;             // 0 - 100000
+MAX_GOLD=999000;             // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=TRUE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=TRUE;        // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=20;          // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=88;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=12;                   // 0 - 100
+MIN_DAMAGE=1000;            // 0 - 250
+MAX_DAMAGE=3500;           // 0 - 250
+LEVEL=20;
+TRACKING_LEVEL=20;
+SIZE=3;
+
+// Red Dragon Speech
+
+// Creature talk scripts
+// LANGUAGE field:  ENGLISH
+// STATE field: JUST_HID, HIDING, CHASING, RETREATING, ATTACKING, or KILLING
+// TARGET field:  HUMAN, PET, CLERIC, DRUID, FIGHTER, RANGER, ROGUE, or WIZARD
+
+
+// Weapon Effectiveness
+
+#dagger(50);
+#holydagger(50);
+#blooddagger(50);
+#broadsword(50);
+#katana(75);
+#scimitar(75);
+#flail(50);
+#mace(75);
+#warhammer(75);
+#spear(50);
+#sickle(75);
+#shortbow(50);
+#flamingsword(25);
+#frostaxe(125);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,20,30); // raw steaks
+#inventory(275,10,25); // dragon teeth
+#inventory(379,15,25); // dragon scales

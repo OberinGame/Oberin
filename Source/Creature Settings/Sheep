@@ -1,1 +1,36 @@
-// Sheep SettingsSPEED=100;                // 35-1000 ... lower values are fasterPOISONOUS=0;              // 0-100 ... higher values are more poisonousHIT_POINTS=6;             // 1-250STRENGTH=6;               // 1-250INTELLIGENCE=20;          // 1-250DEXTERITY=20;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=0;               // 0 - 100000MAX_GOLD=0;               // 0 - 100000SEEK_GOLD=FALSE;          // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=100;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=1;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=5;           // 1 - 100POISON_IMMUNITY=FALSE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=1;             // 0 - 250MAX_DAMAGE=3;             // 0 - 250LEVEL=1;TRACKING_LEVEL=1;SIZE=0;// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,2,5); // 2 to 4 raw steaks#inventory(353,1,1);  //bundle of wool
+// Sheep Settings
+
+SPEED=100;                // 35-1000 ... lower values are faster
+POISONOUS=0;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=6;             // 1-250
+STRENGTH=6;               // 1-250
+INTELLIGENCE=20;          // 1-250
+DEXTERITY=20;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=0;               // 0 - 100000
+MAX_GOLD=0;               // 0 - 100000
+SEEK_GOLD=FALSE;          // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=100;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=1;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=5;           // 1 - 100
+POISON_IMMUNITY=FALSE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=1;             // 0 - 250
+MAX_DAMAGE=3;             // 0 - 250
+LEVEL=1;
+TRACKING_LEVEL=1;
+SIZE=0;
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,2,5); // 2 to 4 raw steaks
+#inventory(353,1,1);  //bundle of wool

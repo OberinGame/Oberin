@@ -1,1 +1,58 @@
-// Queen Ant SettingsSPEED=45;                 // 35-1000 ... lower values are fasterPOISONOUS=50;              // 0-100 ... higher values are more poisonousHIT_POINTS=60;            // 1-250STRENGTH=50;              // 1-250INTELLIGENCE=30;          // 1-250DEXTERITY=50;             // 1-250MAGIC_POINTS=NA;          // 1-250MIN_GOLD=260;               // 0 - 100000MAX_GOLD=600;               // 0 - 100000SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up goldSEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic itemsSEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weaponsMAGIC_RESIST=30;         // 0 - 100 ... lower is more resistentTAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossibleARMOR_RATING=50;          // 1 - 100POISON_IMMUNITY=TRUE;    // TRUE or FALSELOCK=0;                   // 0 - 100MIN_DAMAGE=15;             // 0 - 250MAX_DAMAGE=30;             // 0 - 250LEVEL=8;TRACKING_LEVEL=8;SIZE=1;// Weapon Effectiveness#katana(90);#scimitar(90);#longsword(90);#mace(90);#warhammer(90);#sickle(90);#stave(90);#longbow(90);#longsword(75);#battleaxe(75);#glaive(75);// Creature Inventory// Inventory command:////  For grouped items, like potions://  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);////  For ungrouped items, like weapons://  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item#inventory(352,4,5); // 1 raw steak#inventory(285,0,1);#inventory(284,0,1);//#inventory(295,0,1);//#inventory(291,0,1);//#inventory(387,1,50);//#inventory(388,1,50);//#inventory(389,1,50);//#inventory(390,1,50);//#inventory(391,1,50);
+// Queen Ant Settings
+
+SPEED=45;                 // 35-1000 ... lower values are faster
+POISONOUS=50;              // 0-100 ... higher values are more poisonous
+HIT_POINTS=60;            // 1-250
+STRENGTH=50;              // 1-250
+INTELLIGENCE=30;          // 1-250
+DEXTERITY=50;             // 1-250
+MAGIC_POINTS=NA;          // 1-250
+MIN_GOLD=260;               // 0 - 100000
+MAX_GOLD=600;               // 0 - 100000
+SEEK_GOLD=TRUE;           // TRUE or FALSE ... creature will pick up gold
+SEEK_MAGIC=FALSE;         // TRUE or FALSE ... creature will pick up magic items
+SEEK_WEAPONS=FALSE;       // TRUE or FALSE ... creature will pick up weapons
+MAGIC_RESIST=30;         // 0 - 100 ... lower is more resistent
+TAMING_LEVEL=101;           // 1 - 101 ... lower is easier to tame, 101 is impossible
+ARMOR_RATING=50;          // 1 - 100
+POISON_IMMUNITY=TRUE;    // TRUE or FALSE
+LOCK=0;                   // 0 - 100
+MIN_DAMAGE=15;             // 0 - 250
+MAX_DAMAGE=30;             // 0 - 250
+LEVEL=8;
+TRACKING_LEVEL=8;
+SIZE=1;
+
+// Weapon Effectiveness
+
+#katana(90);
+#scimitar(90);
+#longsword(90);
+#mace(90);
+#warhammer(90);
+#sickle(90);
+#stave(90);
+#longbow(90);
+#longsword(75);
+#battleaxe(75);
+#glaive(75);
+
+// Creature Inventory
+// Inventory command:
+//
+//  For grouped items, like potions:
+//  #inventory(ITEM_NUMBER,MINIMUM,MAXIMUM);
+//
+//  For ungrouped items, like weapons:
+//  #inventory(ITEM_NUMBER,1,ODDS); // 1 in ODDS chance of carrying item
+
+#inventory(352,4,5); // 1 raw steak
+#inventory(285,0,1);
+#inventory(284,0,1);
+//#inventory(295,0,1);
+//#inventory(291,0,1);
+//#inventory(387,1,50);
+//#inventory(388,1,50);
+//#inventory(389,1,50);
+//#inventory(390,1,50);
+//#inventory(391,1,50);
