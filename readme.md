@@ -18,3 +18,6 @@ Folders required in the main server folder: Accounts, AKA IP, AKA Mac, CC Logs, 
 
 # Future Improvements
  - Hash Character Passwords
+ - Client version check
+ - Enforce all client limits on server
+ - Crypto for all sent packets with a key set by the server admin
