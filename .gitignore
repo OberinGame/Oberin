@@ -1,1 +1,8 @@
 Build Toolchain/
+**/.DS_Store
+**/IP Log
+**/Oberin Error Log
+**/*.xSYM
+Source/Oberin Data
+Source/Build/Oberin
+Source/Build/Oberin Server
