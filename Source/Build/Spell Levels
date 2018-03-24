@@ -1,0 +1,44 @@
+Level 1
+
+kLesserHealSpell - 0
+kLesserCureSpell - 0
+kMagicDisarmSpell - 3
+kMagicUnlockSpell - 3
+kRevealSpell - 5
+kCreateFoodSpell - 7
+
+Level 2
+
+kNightVisionSpell -9
+kClumsySpell - 12
+kSimpleMindSpell - 14
+kWeakenSpell - 17
+kAgilitySpell - 20
+kElevateMindSpell - 24
+kMagicTrapSpell - 26
+kStrengthSpell - 30
+kMagicLockSpell - 32
+
+Level 3
+
+kInvisibilitySpell - 35
+kGreaterHealSpell - 40
+kGreaterCureSpell - 42
+kPoisonSpell - 45
+kLightningBoltSpell - 48
+kReflectiveArmorSpell - 50
+kMagicReflectionSpell - 54
+kDrainManaSpell - 59
+
+Level 4
+
+kFireFieldSpell - 60
+kTeleportSpell - 70
+kDisorientationSpell
+kParalyzeSpell - 65
+kExplosionSpell - 62
+
+Level 5
+
+kSummonCreatureSpell - 80
+kManaStealSpell - 85
