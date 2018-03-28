@@ -2279,7 +2279,7 @@ void MainLoop()
 {
 
 	EventRecord						theEvent;
-	static  long					sleepTime = 1L; //0;//1L;
+	static  long					sleepTime = 0L; //0;//1L;
 	int										match=-1;
 	TBoolean							hiEvent=false;
 #ifdef _SERVERONLY
