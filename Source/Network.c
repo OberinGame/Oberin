@@ -31,7 +31,7 @@
 #include "GuildHalls.h"
 #include <stdio.h>
 
-#define							kNextAction						        30		//30
+#define							kNextAction						        5		//30
 
 #ifdef _SERVER
 #define							kMaxHandlerMessageCount				5000
@@ -12250,7 +12250,7 @@ void nw_SendRefreshToAllPlayers(void) // server
 					// gs questionable 2/26/03 //  nw_GetMessages();
 				}
 
-			nextTextRefresh=currentTime+10;
+			nextTextRefresh=currentTime+1;
 		}
 
 	if (gNetGame)
@@ -12260,15 +12260,15 @@ void nw_SendRefreshToAllPlayers(void) // server
 			nbRefresh++;
 
 			if (numberOfPlayersOnline<50)
-				refreshFrequency=12;
+				refreshFrequency=1;
 			else if (numberOfPlayersOnline<65)
-				refreshFrequency=15;
+				refreshFrequency=1;
 			else if (numberOfPlayersOnline<80)
-				refreshFrequency=20;
+				refreshFrequency=1;
 			else if (numberOfPlayersOnline<95)
-				refreshFrequency=25;
+				refreshFrequency=1;
 			else
-				refreshFrequency=30;
+				refreshFrequency=1;
 
 			nextRefresh=currentTime+refreshFrequency;
 
