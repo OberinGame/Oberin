@@ -10,3 +10,4 @@ Source/Debug Build/Oberin
 Source/Debug Build/Oberin Server
 **/.idea
 **/cmake-build-debug
+Source/Build/Oberin.build

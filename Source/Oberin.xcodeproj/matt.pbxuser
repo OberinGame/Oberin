@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	C9FC64A7206C961F0046EE5E /* Project object */ = {
+		activeBuildConfigurationName = "Imported CodeWarrior Settings";
+		activeExecutable = C9FC64BE206C961F0046EE5E /* Carbon Toolbox Final */;
+		activeTarget = C9FC64B1206C961F0046EE5E /* Carbon Toolbox Debug */;
+		breakpointsGroup = C9FC6597206C96870046EE5E /* XCBreakpointsBucket */;
+		codeSenseManager = C9FC64AB206C961F0046EE5E /* Code sense */;
+		executables = (
+			C9FC64B6206C961F0046EE5E /* Carbon Toolbox Debug */,
+			C9FC64BE206C961F0046EE5E /* Carbon Toolbox Final */,
+		);
+		ignoreBreakpointsInProjectsDict = {
+		};
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					464,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 543987233;
+			PBXWorkspaceStateSaveDate = 543987233;
+		};
+		perUserProjectItems = {
+			C9FC6590206C96680046EE5E /* PBXTextBookmark */ = C9FC6590206C96680046EE5E /* PBXTextBookmark */;
+			C9FC6591206C96680046EE5E /* PBXTextBookmark */ = C9FC6591206C96680046EE5E /* PBXTextBookmark */;
+			C9FC6593206C96680046EE5E /* PBXTextBookmark */ = C9FC6593206C96680046EE5E /* PBXTextBookmark */;
+			C9FC6594206C96680046EE5E /* PBXTextBookmark */ = C9FC6594206C96680046EE5E /* PBXTextBookmark */;
+			C9FC659B206C976F0046EE5E /* PBXTextBookmark */ = C9FC659B206C976F0046EE5E /* PBXTextBookmark */;
+			C9FC659C206C976F0046EE5E /* PBXTextBookmark */ = C9FC659C206C976F0046EE5E /* PBXTextBookmark */;
+			C9FC659D206C976F0046EE5E /* PBXTextBookmark */ = C9FC659D206C976F0046EE5E /* PBXTextBookmark */;
+			C9FC659E206C976F0046EE5E /* PBXTextBookmark */ = C9FC659E206C976F0046EE5E /* PBXTextBookmark */;
+			C9FC659F206C976F0046EE5E /* PBXTextBookmark */ = C9FC659F206C976F0046EE5E /* PBXTextBookmark */;
+		};
+		sourceControlManager = C9FC64AA206C961F0046EE5E /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	C9FC64AA206C961F0046EE5E /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	C9FC64AB206C961F0046EE5E /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C9FC64B1206C961F0046EE5E /* Carbon Toolbox Debug */ = {
+		activeExec = 0;
+		executables = (
+			C9FC64B6206C961F0046EE5E /* Carbon Toolbox Debug */,
+		);
+	};
+	C9FC64B6206C961F0046EE5E /* Carbon Toolbox Debug */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Carbon Toolbox Debug";
+		sourceDirectories = (
+		);
+	};
+	C9FC64BC206C961F0046EE5E /* Carbon Toolbox Final */ = {
+		activeExec = 0;
+		executables = (
+			C9FC64BE206C961F0046EE5E /* Carbon Toolbox Final */,
+		);
+	};
+	C9FC64BE206C961F0046EE5E /* Carbon Toolbox Final */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = "Carbon Toolbox Final";
+		sourceDirectories = (
+		);
+	};
+	C9FC64F1206C961F0046EE5E /* Toolbox.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1274, 5964}}";
+			sepNavSelRange = "{3232, 40}";
+			sepNavVisRect = "{{0, 1725}, {711, 429}}";
+			sepNavWindowFrame = "{{38, 162}, {750, 558}}";
+		};
+	};
+	C9FC6589206C96310046EE5E /* CGShading.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CGShading.h;
+		path = /System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Headers/CGShading.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1442, 1484}}";
+			sepNavSelRange = "{1703, 201}";
+			sepNavVisRect = "{{0, 598}, {742, 246}}";
+			sepNavWindowFrame = "{{15, 183}, {750, 558}}";
+		};
+	};
+	C9FC658E206C96620046EE5E /* TranslationExtensions.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = TranslationExtensions.h;
+		path = /System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/TranslationExtensions.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1520, 3080}}";
+			sepNavSelRange = "{1708, 30}";
+			sepNavVisRect = "{{0, 710}, {742, 246}}";
+			sepNavWindowFrame = "{{61, 141}, {750, 558}}";
+		};
+	};
+	C9FC6590206C96680046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC6589206C96310046EE5E /* CGShading.h */;
+		name = "CG_EXTERN CGShadingRef CGShadingCreateAxial(CGColorSpaceRef colorspace, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd) AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER;";
+		rLen = 201;
+		rLoc = 1703;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 1444;
+	};
+	C9FC6591206C96680046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: parse error before '\\x6f624443'";
+		fRef = C9FC6592206C96680046EE5E /* TranslationExtensions.h */;
+		rLen = 1;
+		rLoc = 48;
+		rType = 1;
+	};
+	C9FC6592206C96680046EE5E /* TranslationExtensions.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = TranslationExtensions.h;
+		path = /System/Library/Frameworks/Carbon.framework/Frameworks/HIToolbox.framework/Headers/TranslationExtensions.h;
+		sourceTree = "<absolute>";
+	};
+	C9FC6593206C96680046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC6589206C96310046EE5E /* CGShading.h */;
+		name = "CG_EXTERN CGShadingRef CGShadingCreateAxial(CGColorSpaceRef colorspace, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd) AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER;";
+		rLen = 201;
+		rLoc = 1703;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 1444;
+	};
+	C9FC6594206C96680046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC658E206C96620046EE5E /* TranslationExtensions.h */;
+		name = "typedef OSType                          FileType;";
+		rLen = 50;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 1024;
+	};
+	C9FC6597206C96870046EE5E /* XCBreakpointsBucket */ = {
+		isa = XCBreakpointsBucket;
+		name = "Project Breakpoints";
+		objects = (
+		);
+	};
+	C9FC659B206C976F0046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC6589206C96310046EE5E /* CGShading.h */;
+		name = "CG_EXTERN CGShadingRef CGShadingCreateAxial(CGColorSpaceRef colorspace, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd) AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER;";
+		rLen = 201;
+		rLoc = 1703;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 1444;
+	};
+	C9FC659C206C976F0046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: parse error before '\\x6f624443'";
+		fRef = C9FC658E206C96620046EE5E /* TranslationExtensions.h */;
+		rLen = 1;
+		rLoc = 59;
+		rType = 1;
+	};
+	C9FC659D206C976F0046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC658E206C96620046EE5E /* TranslationExtensions.h */;
+		name = "typedef OSType                          FileType;";
+		rLen = 50;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 662;
+		vrLoc = 1024;
+	};
+	C9FC659E206C976F0046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC6589206C96310046EE5E /* CGShading.h */;
+		name = "CG_EXTERN CGShadingRef CGShadingCreateAxial(CGColorSpaceRef colorspace, CGPoint start, CGPoint end, CGFunctionRef function, bool extendStart, bool extendEnd) AVAILABLE_MAC_OS_X_VERSION_10_2_AND_LATER;";
+		rLen = 201;
+		rLoc = 1703;
+		rType = 0;
+		vrLen = 755;
+		vrLoc = 1444;
+	};
+	C9FC659F206C976F0046EE5E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9FC658E206C96620046EE5E /* TranslationExtensions.h */;
+		name = "FileType            format;";
+		rLen = 30;
+		rLoc = 1708;
+		rType = 0;
+		vrLen = 712;
+		vrLoc = 1378;
+	};
+}

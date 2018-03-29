@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9FC64FB206C961F0046EE5E /* Oberin.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = C9FC64FA206C961F0046EE5E /* Oberin.rsrc */; };
+		C9FC64FC206C961F0046EE5E /* Action.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64C6206C961F0046EE5E /* Action.c */; };
+		C9FC64FD206C961F0046EE5E /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C7206C961F0046EE5E /* Action.h */; };
+		C9FC64FE206C961F0046EE5E /* Async Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64C8206C961F0046EE5E /* Async Sound.c */; };
+		C9FC64FF206C961F0046EE5E /* Async Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C9206C961F0046EE5E /* Async Sound.h */; };
+		C9FC6500206C961F0046EE5E /* Common.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CA206C961F0046EE5E /* Common.c */; };
+		C9FC6501206C961F0046EE5E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CB206C961F0046EE5E /* Common.h */; };
+		C9FC6502206C961F0046EE5E /* Creatures.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CC206C961F0046EE5E /* Creatures.c */; };
+		C9FC6503206C961F0046EE5E /* Creatures.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CD206C961F0046EE5E /* Creatures.h */; };
+		C9FC6504206C961F0046EE5E /* FileIO.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CE206C961F0046EE5E /* FileIO.c */; };
+		C9FC6505206C961F0046EE5E /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CF206C961F0046EE5E /* FileIO.h */; };
+		C9FC6506206C961F0046EE5E /* FX.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D0206C961F0046EE5E /* FX.c */; };
+		C9FC6507206C961F0046EE5E /* FX.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D1206C961F0046EE5E /* FX.h */; };
+		C9FC6508206C961F0046EE5E /* Graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D4206C961F0046EE5E /* Graphics.c */; };
+		C9FC6509206C961F0046EE5E /* Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D5206C961F0046EE5E /* Graphics.h */; };
+		C9FC650A206C961F0046EE5E /* GuildHalls.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D6206C961F0046EE5E /* GuildHalls.c */; };
+		C9FC650B206C961F0046EE5E /* GuildHalls.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D7206C961F0046EE5E /* GuildHalls.h */; };
+		C9FC650C206C961F0046EE5E /* Inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D8206C961F0046EE5E /* Inventory.c */; };
+		C9FC650D206C961F0046EE5E /* Inventory.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D9206C961F0046EE5E /* Inventory.h */; };
+		C9FC650E206C961F0046EE5E /* Network.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DC206C961F0046EE5E /* Network.c */; };
+		C9FC650F206C961F0046EE5E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DD206C961F0046EE5E /* Network.h */; };
+		C9FC6510206C961F0046EE5E /* Npc.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DE206C961F0046EE5E /* Npc.c */; };
+		C9FC6511206C961F0046EE5E /* Npc.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DF206C961F0046EE5E /* Npc.h */; };
+		C9FC6512206C961F0046EE5E /* OPUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E0206C961F0046EE5E /* OPUtils.cpp */; };
+		C9FC6513206C961F0046EE5E /* OPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E1206C961F0046EE5E /* OPUtils.h */; };
+		C9FC6514206C961F0046EE5E /* Players.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E2206C961F0046EE5E /* Players.c */; };
+		C9FC6515206C961F0046EE5E /* Players.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E3206C961F0046EE5E /* Players.h */; };
+		C9FC6516206C961F0046EE5E /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DA206C961F0046EE5E /* Items.c */; };
+		C9FC6517206C961F0046EE5E /* Items.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DB206C961F0046EE5E /* Items.h */; };
+		C9FC6518206C961F0046EE5E /* Quest.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E4206C961F0046EE5E /* Quest.c */; };
+		C9FC6519206C961F0046EE5E /* Quest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E5206C961F0046EE5E /* Quest.h */; };
+		C9FC651A206C961F0046EE5E /* Resource.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E6206C961F0046EE5E /* Resource.c */; };
+		C9FC651B206C961F0046EE5E /* Resource.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E7206C961F0046EE5E /* Resource.h */; };
+		C9FC651C206C961F0046EE5E /* Shell.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E8206C961F0046EE5E /* Shell.c */; };
+		C9FC651D206C961F0046EE5E /* Shell.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E9206C961F0046EE5E /* Shell.h */; };
+		C9FC651E206C961F0046EE5E /* Shops.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EA206C961F0046EE5E /* Shops.c */; };
+		C9FC651F206C961F0046EE5E /* Shops.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EB206C961F0046EE5E /* Shops.h */; };
+		C9FC6520206C961F0046EE5E /* Skills.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EC206C961F0046EE5E /* Skills.c */; };
+		C9FC6521206C961F0046EE5E /* Skills.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64ED206C961F0046EE5E /* Skills.h */; };
+		C9FC6522206C961F0046EE5E /* Splash.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EE206C961F0046EE5E /* Splash.c */; };
+		C9FC6523206C961F0046EE5E /* Splash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EF206C961F0046EE5E /* Splash.h */; };
+		C9FC6524206C961F0046EE5E /* Toolbox.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64F0206C961F0046EE5E /* Toolbox.c */; };
+		C9FC6525206C961F0046EE5E /* Toolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F1206C961F0046EE5E /* Toolbox.h */; };
+		C9FC6526206C961F0046EE5E /* GameText.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D2206C961F0046EE5E /* GameText.c */; };
+		C9FC6527206C961F0046EE5E /* GameText.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D3206C961F0046EE5E /* GameText.h */; };
+		C9FC6528206C961F0046EE5E /* Updater.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64F2206C961F0046EE5E /* Updater.c */; };
+		C9FC6529206C961F0046EE5E /* Updater.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F3206C961F0046EE5E /* Updater.h */; };
+		C9FC652A206C961F0046EE5E /* OpenPlayLib in Resources */ = {isa = PBXBuildFile; fileRef = C9FC64C4206C961F0046EE5E /* OpenPlayLib */; };
+		C9FC652B206C961F0046EE5E /* OpenPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F7206C961F0046EE5E /* OpenPlay.h */; };
+		C9FC652C206C961F0046EE5E /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C7206C961F0046EE5E /* Action.h */; };
+		C9FC652D206C961F0046EE5E /* Async Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C9206C961F0046EE5E /* Async Sound.h */; };
+		C9FC652E206C961F0046EE5E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CB206C961F0046EE5E /* Common.h */; };
+		C9FC652F206C961F0046EE5E /* Creatures.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CD206C961F0046EE5E /* Creatures.h */; };
+		C9FC6530206C961F0046EE5E /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CF206C961F0046EE5E /* FileIO.h */; };
+		C9FC6531206C961F0046EE5E /* FX.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D1206C961F0046EE5E /* FX.h */; };
+		C9FC6532206C961F0046EE5E /* GameText.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D3206C961F0046EE5E /* GameText.h */; };
+		C9FC6533206C961F0046EE5E /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F5206C961F0046EE5E /* Globals.h */; };
+		C9FC6534206C961F0046EE5E /* Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D5206C961F0046EE5E /* Graphics.h */; };
+		C9FC6535206C961F0046EE5E /* GuildHalls.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D7206C961F0046EE5E /* GuildHalls.h */; };
+		C9FC6536206C961F0046EE5E /* Inventory.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D9206C961F0046EE5E /* Inventory.h */; };
+		C9FC6537206C961F0046EE5E /* Items.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DB206C961F0046EE5E /* Items.h */; };
+		C9FC6538206C961F0046EE5E /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F6206C961F0046EE5E /* Keys.h */; };
+		C9FC6539206C961F0046EE5E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DD206C961F0046EE5E /* Network.h */; };
+		C9FC653A206C961F0046EE5E /* Npc.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DF206C961F0046EE5E /* Npc.h */; };
+		C9FC653B206C961F0046EE5E /* Players.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E3206C961F0046EE5E /* Players.h */; };
+		C9FC653C206C961F0046EE5E /* Quest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E5206C961F0046EE5E /* Quest.h */; };
+		C9FC653D206C961F0046EE5E /* Remap.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F8206C961F0046EE5E /* Remap.h */; };
+		C9FC653E206C961F0046EE5E /* Resource.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E7206C961F0046EE5E /* Resource.h */; };
+		C9FC653F206C961F0046EE5E /* Shops.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EB206C961F0046EE5E /* Shops.h */; };
+		C9FC6540206C961F0046EE5E /* Skills.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64ED206C961F0046EE5E /* Skills.h */; };
+		C9FC6541206C961F0046EE5E /* Splash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EF206C961F0046EE5E /* Splash.h */; };
+		C9FC6542206C961F0046EE5E /* Toolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F1206C961F0046EE5E /* Toolbox.h */; };
+		C9FC6543206C961F0046EE5E /* Shell.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E9206C961F0046EE5E /* Shell.h */; };
+		C9FC6544206C961F0046EE5E /* Updater.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F3206C961F0046EE5E /* Updater.h */; };
+		C9FC6545206C961F0046EE5E /* OPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E1206C961F0046EE5E /* OPUtils.h */; };
+		C9FC6549206C96200046EE5E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FC6548206C96200046EE5E /* Carbon.framework */; };
+		C9FC654B206C96200046EE5E /* String_Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC654A206C96200046EE5E /* String_Utils.h */; };
+		C9FC654C206C96200046EE5E /* OPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E1206C961F0046EE5E /* OPUtils.h */; };
+		C9FC654D206C96200046EE5E /* OpenPlay.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F7206C961F0046EE5E /* OpenPlay.h */; };
+		C9FC654E206C96200046EE5E /* Action.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C7206C961F0046EE5E /* Action.h */; };
+		C9FC654F206C96200046EE5E /* Async Sound.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64C9206C961F0046EE5E /* Async Sound.h */; };
+		C9FC6550206C96200046EE5E /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CB206C961F0046EE5E /* Common.h */; };
+		C9FC6551206C96200046EE5E /* Creatures.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CD206C961F0046EE5E /* Creatures.h */; };
+		C9FC6552206C96200046EE5E /* FileIO.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64CF206C961F0046EE5E /* FileIO.h */; };
+		C9FC6553206C96200046EE5E /* FX.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D1206C961F0046EE5E /* FX.h */; };
+		C9FC6554206C96200046EE5E /* Globals.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F5206C961F0046EE5E /* Globals.h */; };
+		C9FC6555206C96200046EE5E /* Graphics.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D5206C961F0046EE5E /* Graphics.h */; };
+		C9FC6556206C96200046EE5E /* Inventory.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D9206C961F0046EE5E /* Inventory.h */; };
+		C9FC6557206C96200046EE5E /* Items.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DB206C961F0046EE5E /* Items.h */; };
+		C9FC6558206C96200046EE5E /* Keys.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F6206C961F0046EE5E /* Keys.h */; };
+		C9FC6559206C96200046EE5E /* Network.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DD206C961F0046EE5E /* Network.h */; };
+		C9FC655A206C96200046EE5E /* Npc.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64DF206C961F0046EE5E /* Npc.h */; };
+		C9FC655B206C96200046EE5E /* Players.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E3206C961F0046EE5E /* Players.h */; };
+		C9FC655C206C96200046EE5E /* Quest.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E5206C961F0046EE5E /* Quest.h */; };
+		C9FC655D206C96200046EE5E /* Remap.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F8206C961F0046EE5E /* Remap.h */; };
+		C9FC655E206C96200046EE5E /* Resource.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E7206C961F0046EE5E /* Resource.h */; };
+		C9FC655F206C96200046EE5E /* Shops.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EB206C961F0046EE5E /* Shops.h */; };
+		C9FC6560206C96200046EE5E /* Skills.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64ED206C961F0046EE5E /* Skills.h */; };
+		C9FC6561206C96200046EE5E /* Splash.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64EF206C961F0046EE5E /* Splash.h */; };
+		C9FC6562206C96200046EE5E /* Toolbox.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F1206C961F0046EE5E /* Toolbox.h */; };
+		C9FC6563206C96200046EE5E /* Shell.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64E9206C961F0046EE5E /* Shell.h */; };
+		C9FC6564206C96200046EE5E /* Oberin.rsrc in Rez */ = {isa = PBXBuildFile; fileRef = C9FC64FA206C961F0046EE5E /* Oberin.rsrc */; };
+		C9FC6565206C96200046EE5E /* Action.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64C6206C961F0046EE5E /* Action.c */; };
+		C9FC6566206C96200046EE5E /* Async Sound.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64C8206C961F0046EE5E /* Async Sound.c */; };
+		C9FC6567206C96200046EE5E /* Common.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CA206C961F0046EE5E /* Common.c */; };
+		C9FC6568206C96200046EE5E /* Creatures.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CC206C961F0046EE5E /* Creatures.c */; };
+		C9FC6569206C96200046EE5E /* FileIO.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64CE206C961F0046EE5E /* FileIO.c */; };
+		C9FC656A206C96200046EE5E /* FX.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D0206C961F0046EE5E /* FX.c */; };
+		C9FC656B206C96200046EE5E /* Graphics.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D4206C961F0046EE5E /* Graphics.c */; };
+		C9FC656C206C96200046EE5E /* Inventory.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D8206C961F0046EE5E /* Inventory.c */; };
+		C9FC656D206C96200046EE5E /* Items.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DA206C961F0046EE5E /* Items.c */; };
+		C9FC656E206C96200046EE5E /* Network.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DC206C961F0046EE5E /* Network.c */; };
+		C9FC656F206C96200046EE5E /* Npc.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64DE206C961F0046EE5E /* Npc.c */; };
+		C9FC6570206C96200046EE5E /* OPUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E0206C961F0046EE5E /* OPUtils.cpp */; };
+		C9FC6571206C96200046EE5E /* Players.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E2206C961F0046EE5E /* Players.c */; };
+		C9FC6572206C96200046EE5E /* Quest.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E4206C961F0046EE5E /* Quest.c */; };
+		C9FC6573206C96200046EE5E /* Resource.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E6206C961F0046EE5E /* Resource.c */; };
+		C9FC6574206C96200046EE5E /* Shell.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64E8206C961F0046EE5E /* Shell.c */; };
+		C9FC6575206C96200046EE5E /* Shops.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EA206C961F0046EE5E /* Shops.c */; };
+		C9FC6576206C96200046EE5E /* Skills.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EC206C961F0046EE5E /* Skills.c */; };
+		C9FC6577206C96200046EE5E /* Splash.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64EE206C961F0046EE5E /* Splash.c */; };
+		C9FC6578206C96200046EE5E /* Toolbox.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64F0206C961F0046EE5E /* Toolbox.c */; };
+		C9FC6579206C96200046EE5E /* GameText.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D2206C961F0046EE5E /* GameText.c */; };
+		C9FC657A206C96200046EE5E /* GameText.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D3206C961F0046EE5E /* GameText.h */; };
+		C9FC657B206C96200046EE5E /* GameText.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D3206C961F0046EE5E /* GameText.h */; };
+		C9FC657C206C96200046EE5E /* OpenPlayLib in Resources */ = {isa = PBXBuildFile; fileRef = C9FC64C4206C961F0046EE5E /* OpenPlayLib */; };
+		C9FC657D206C96200046EE5E /* Updater.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64F3206C961F0046EE5E /* Updater.h */; };
+		C9FC657E206C96200046EE5E /* Updater.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64F2206C961F0046EE5E /* Updater.c */; };
+		C9FC657F206C96200046EE5E /* GuildHalls.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC64D7206C961F0046EE5E /* GuildHalls.h */; };
+		C9FC6580206C96200046EE5E /* GuildHalls.c in Sources */ = {isa = PBXBuildFile; fileRef = C9FC64D6206C961F0046EE5E /* GuildHalls.c */; };
+		C9FC6581206C96210046EE5E /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FC6548206C96200046EE5E /* Carbon.framework */; };
+		C9FC6582206C96210046EE5E /* String_Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = C9FC654A206C96200046EE5E /* String_Utils.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9FC64B4206C961F0046EE5E /* Oberin.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Oberin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FC64BD206C961F0046EE5E /* Oberin.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Oberin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9FC64C4206C961F0046EE5E /* OpenPlayLib */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenPlayLib; sourceTree = SOURCE_ROOT; };
+		C9FC64C6206C961F0046EE5E /* Action.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Action.c; sourceTree = SOURCE_ROOT; };
+		C9FC64C7206C961F0046EE5E /* Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Action.h; sourceTree = SOURCE_ROOT; };
+		C9FC64C8206C961F0046EE5E /* Async Sound.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Async Sound.c"; sourceTree = SOURCE_ROOT; };
+		C9FC64C9206C961F0046EE5E /* Async Sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Async Sound.h"; sourceTree = SOURCE_ROOT; };
+		C9FC64CA206C961F0046EE5E /* Common.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Common.c; sourceTree = SOURCE_ROOT; };
+		C9FC64CB206C961F0046EE5E /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = SOURCE_ROOT; };
+		C9FC64CC206C961F0046EE5E /* Creatures.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Creatures.c; sourceTree = SOURCE_ROOT; };
+		C9FC64CD206C961F0046EE5E /* Creatures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Creatures.h; sourceTree = SOURCE_ROOT; };
+		C9FC64CE206C961F0046EE5E /* FileIO.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FileIO.c; sourceTree = SOURCE_ROOT; };
+		C9FC64CF206C961F0046EE5E /* FileIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileIO.h; sourceTree = SOURCE_ROOT; };
+		C9FC64D0206C961F0046EE5E /* FX.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FX.c; sourceTree = SOURCE_ROOT; };
+		C9FC64D1206C961F0046EE5E /* FX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FX.h; sourceTree = SOURCE_ROOT; };
+		C9FC64D2206C961F0046EE5E /* GameText.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GameText.c; sourceTree = SOURCE_ROOT; };
+		C9FC64D3206C961F0046EE5E /* GameText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameText.h; sourceTree = SOURCE_ROOT; };
+		C9FC64D4206C961F0046EE5E /* Graphics.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Graphics.c; sourceTree = SOURCE_ROOT; };
+		C9FC64D5206C961F0046EE5E /* Graphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graphics.h; sourceTree = SOURCE_ROOT; };
+		C9FC64D6206C961F0046EE5E /* GuildHalls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GuildHalls.c; sourceTree = SOURCE_ROOT; };
+		C9FC64D7206C961F0046EE5E /* GuildHalls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GuildHalls.h; sourceTree = SOURCE_ROOT; };
+		C9FC64D8206C961F0046EE5E /* Inventory.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Inventory.c; sourceTree = SOURCE_ROOT; };
+		C9FC64D9206C961F0046EE5E /* Inventory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Inventory.h; sourceTree = SOURCE_ROOT; };
+		C9FC64DA206C961F0046EE5E /* Items.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Items.c; sourceTree = SOURCE_ROOT; };
+		C9FC64DB206C961F0046EE5E /* Items.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Items.h; sourceTree = SOURCE_ROOT; };
+		C9FC64DC206C961F0046EE5E /* Network.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Network.c; sourceTree = SOURCE_ROOT; };
+		C9FC64DD206C961F0046EE5E /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = SOURCE_ROOT; };
+		C9FC64DE206C961F0046EE5E /* Npc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Npc.c; sourceTree = SOURCE_ROOT; };
+		C9FC64DF206C961F0046EE5E /* Npc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Npc.h; sourceTree = SOURCE_ROOT; };
+		C9FC64E0206C961F0046EE5E /* OPUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OPUtils.cpp; sourceTree = SOURCE_ROOT; };
+		C9FC64E1206C961F0046EE5E /* OPUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPUtils.h; sourceTree = SOURCE_ROOT; };
+		C9FC64E2206C961F0046EE5E /* Players.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Players.c; sourceTree = SOURCE_ROOT; };
+		C9FC64E3206C961F0046EE5E /* Players.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Players.h; sourceTree = SOURCE_ROOT; };
+		C9FC64E4206C961F0046EE5E /* Quest.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Quest.c; sourceTree = SOURCE_ROOT; };
+		C9FC64E5206C961F0046EE5E /* Quest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Quest.h; sourceTree = SOURCE_ROOT; };
+		C9FC64E6206C961F0046EE5E /* Resource.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Resource.c; sourceTree = SOURCE_ROOT; };
+		C9FC64E7206C961F0046EE5E /* Resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = SOURCE_ROOT; };
+		C9FC64E8206C961F0046EE5E /* Shell.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Shell.c; sourceTree = SOURCE_ROOT; };
+		C9FC64E9206C961F0046EE5E /* Shell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shell.h; sourceTree = SOURCE_ROOT; };
+		C9FC64EA206C961F0046EE5E /* Shops.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Shops.c; sourceTree = SOURCE_ROOT; };
+		C9FC64EB206C961F0046EE5E /* Shops.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shops.h; sourceTree = SOURCE_ROOT; };
+		C9FC64EC206C961F0046EE5E /* Skills.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Skills.c; sourceTree = SOURCE_ROOT; };
+		C9FC64ED206C961F0046EE5E /* Skills.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Skills.h; sourceTree = SOURCE_ROOT; };
+		C9FC64EE206C961F0046EE5E /* Splash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Splash.c; sourceTree = SOURCE_ROOT; };
+		C9FC64EF206C961F0046EE5E /* Splash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Splash.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F0206C961F0046EE5E /* Toolbox.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Toolbox.c; sourceTree = SOURCE_ROOT; };
+		C9FC64F1206C961F0046EE5E /* Toolbox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Toolbox.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F2206C961F0046EE5E /* Updater.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Updater.c; sourceTree = SOURCE_ROOT; };
+		C9FC64F3206C961F0046EE5E /* Updater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Updater.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F5206C961F0046EE5E /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F6206C961F0046EE5E /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Keys.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F7206C961F0046EE5E /* OpenPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenPlay.h; sourceTree = SOURCE_ROOT; };
+		C9FC64F8206C961F0046EE5E /* Remap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remap.h; sourceTree = SOURCE_ROOT; };
+		C9FC64FA206C961F0046EE5E /* Oberin.rsrc */ = {isa = PBXFileReference; lastKnownFileType = archive.rsrc; path = Oberin.rsrc; sourceTree = SOURCE_ROOT; };
+		C9FC6548206C96200046EE5E /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		C9FC654A206C96200046EE5E /* String_Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = String_Utils.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9FC64AF206C961F0046EE5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC6581206C96210046EE5E /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FC64BA206C961F0046EE5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC6549206C96200046EE5E /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9FC64A5206C961F0046EE5E = {
+			isa = PBXGroup;
+			children = (
+				C9FC64C3206C961F0046EE5E /* Libraries */,
+				C9FC64C5206C961F0046EE5E /* Sources */,
+				C9FC64F4206C961F0046EE5E /* Headers */,
+				C9FC64F9206C961F0046EE5E /* Resources */,
+				C9FC6546206C96200046EE5E /* Imported Files */,
+				C9FC6547206C96200046EE5E /* Frameworks */,
+				C9FC64B5206C961F0046EE5E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9FC64B5206C961F0046EE5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC64B4206C961F0046EE5E /* Oberin.app */,
+				C9FC64BD206C961F0046EE5E /* Oberin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9FC64C3206C961F0046EE5E /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC64C4206C961F0046EE5E /* OpenPlayLib */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C9FC64C5206C961F0046EE5E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC64C7206C961F0046EE5E /* Action.h */,
+				C9FC64C6206C961F0046EE5E /* Action.c */,
+				C9FC64C9206C961F0046EE5E /* Async Sound.h */,
+				C9FC64C8206C961F0046EE5E /* Async Sound.c */,
+				C9FC64CB206C961F0046EE5E /* Common.h */,
+				C9FC64CA206C961F0046EE5E /* Common.c */,
+				C9FC64CD206C961F0046EE5E /* Creatures.h */,
+				C9FC64CC206C961F0046EE5E /* Creatures.c */,
+				C9FC64CF206C961F0046EE5E /* FileIO.h */,
+				C9FC64CE206C961F0046EE5E /* FileIO.c */,
+				C9FC64D1206C961F0046EE5E /* FX.h */,
+				C9FC64D0206C961F0046EE5E /* FX.c */,
+				C9FC64D3206C961F0046EE5E /* GameText.h */,
+				C9FC64D2206C961F0046EE5E /* GameText.c */,
+				C9FC64D5206C961F0046EE5E /* Graphics.h */,
+				C9FC64D4206C961F0046EE5E /* Graphics.c */,
+				C9FC64D7206C961F0046EE5E /* GuildHalls.h */,
+				C9FC64D6206C961F0046EE5E /* GuildHalls.c */,
+				C9FC64D9206C961F0046EE5E /* Inventory.h */,
+				C9FC64D8206C961F0046EE5E /* Inventory.c */,
+				C9FC64DB206C961F0046EE5E /* Items.h */,
+				C9FC64DA206C961F0046EE5E /* Items.c */,
+				C9FC64DD206C961F0046EE5E /* Network.h */,
+				C9FC64DC206C961F0046EE5E /* Network.c */,
+				C9FC64DF206C961F0046EE5E /* Npc.h */,
+				C9FC64DE206C961F0046EE5E /* Npc.c */,
+				C9FC64E1206C961F0046EE5E /* OPUtils.h */,
+				C9FC64E0206C961F0046EE5E /* OPUtils.cpp */,
+				C9FC64E3206C961F0046EE5E /* Players.h */,
+				C9FC64E2206C961F0046EE5E /* Players.c */,
+				C9FC64E5206C961F0046EE5E /* Quest.h */,
+				C9FC64E4206C961F0046EE5E /* Quest.c */,
+				C9FC64E7206C961F0046EE5E /* Resource.h */,
+				C9FC64E6206C961F0046EE5E /* Resource.c */,
+				C9FC64E9206C961F0046EE5E /* Shell.h */,
+				C9FC64E8206C961F0046EE5E /* Shell.c */,
+				C9FC64EB206C961F0046EE5E /* Shops.h */,
+				C9FC64EA206C961F0046EE5E /* Shops.c */,
+				C9FC64ED206C961F0046EE5E /* Skills.h */,
+				C9FC64EC206C961F0046EE5E /* Skills.c */,
+				C9FC64EF206C961F0046EE5E /* Splash.h */,
+				C9FC64EE206C961F0046EE5E /* Splash.c */,
+				C9FC64F1206C961F0046EE5E /* Toolbox.h */,
+				C9FC64F0206C961F0046EE5E /* Toolbox.c */,
+				C9FC64F3206C961F0046EE5E /* Updater.h */,
+				C9FC64F2206C961F0046EE5E /* Updater.c */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		C9FC64F4206C961F0046EE5E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC64F5206C961F0046EE5E /* Globals.h */,
+				C9FC64F6206C961F0046EE5E /* Keys.h */,
+				C9FC64F7206C961F0046EE5E /* OpenPlay.h */,
+				C9FC64F8206C961F0046EE5E /* Remap.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		C9FC64F9206C961F0046EE5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC64FA206C961F0046EE5E /* Oberin.rsrc */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C9FC6546206C96200046EE5E /* Imported Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC654A206C96200046EE5E /* String_Utils.h */,
+			);
+			name = "Imported Files";
+			sourceTree = "<group>";
+		};
+		C9FC6547206C96200046EE5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FC6548206C96200046EE5E /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9FC64AC206C961F0046EE5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC654C206C96200046EE5E /* OPUtils.h in Headers */,
+				C9FC654D206C96200046EE5E /* OpenPlay.h in Headers */,
+				C9FC654E206C96200046EE5E /* Action.h in Headers */,
+				C9FC654F206C96200046EE5E /* Async Sound.h in Headers */,
+				C9FC6550206C96200046EE5E /* Common.h in Headers */,
+				C9FC6551206C96200046EE5E /* Creatures.h in Headers */,
+				C9FC6552206C96200046EE5E /* FileIO.h in Headers */,
+				C9FC6553206C96200046EE5E /* FX.h in Headers */,
+				C9FC6554206C96200046EE5E /* Globals.h in Headers */,
+				C9FC6555206C96200046EE5E /* Graphics.h in Headers */,
+				C9FC6556206C96200046EE5E /* Inventory.h in Headers */,
+				C9FC6557206C96200046EE5E /* Items.h in Headers */,
+				C9FC6558206C96200046EE5E /* Keys.h in Headers */,
+				C9FC6559206C96200046EE5E /* Network.h in Headers */,
+				C9FC655A206C96200046EE5E /* Npc.h in Headers */,
+				C9FC655B206C96200046EE5E /* Players.h in Headers */,
+				C9FC655C206C96200046EE5E /* Quest.h in Headers */,
+				C9FC655D206C96200046EE5E /* Remap.h in Headers */,
+				C9FC655E206C96200046EE5E /* Resource.h in Headers */,
+				C9FC655F206C96200046EE5E /* Shops.h in Headers */,
+				C9FC6560206C96200046EE5E /* Skills.h in Headers */,
+				C9FC6561206C96200046EE5E /* Splash.h in Headers */,
+				C9FC6562206C96200046EE5E /* Toolbox.h in Headers */,
+				C9FC6563206C96200046EE5E /* Shell.h in Headers */,
+				C9FC657A206C96200046EE5E /* GameText.h in Headers */,
+				C9FC657B206C96200046EE5E /* GameText.h in Headers */,
+				C9FC657D206C96200046EE5E /* Updater.h in Headers */,
+				C9FC657F206C96200046EE5E /* GuildHalls.h in Headers */,
+				C9FC6582206C96210046EE5E /* String_Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FC64B7206C961F0046EE5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC64FD206C961F0046EE5E /* Action.h in Headers */,
+				C9FC64FF206C961F0046EE5E /* Async Sound.h in Headers */,
+				C9FC6501206C961F0046EE5E /* Common.h in Headers */,
+				C9FC6503206C961F0046EE5E /* Creatures.h in Headers */,
+				C9FC6505206C961F0046EE5E /* FileIO.h in Headers */,
+				C9FC6507206C961F0046EE5E /* FX.h in Headers */,
+				C9FC6509206C961F0046EE5E /* Graphics.h in Headers */,
+				C9FC650B206C961F0046EE5E /* GuildHalls.h in Headers */,
+				C9FC650D206C961F0046EE5E /* Inventory.h in Headers */,
+				C9FC650F206C961F0046EE5E /* Network.h in Headers */,
+				C9FC6511206C961F0046EE5E /* Npc.h in Headers */,
+				C9FC6513206C961F0046EE5E /* OPUtils.h in Headers */,
+				C9FC6515206C961F0046EE5E /* Players.h in Headers */,
+				C9FC6517206C961F0046EE5E /* Items.h in Headers */,
+				C9FC6519206C961F0046EE5E /* Quest.h in Headers */,
+				C9FC651B206C961F0046EE5E /* Resource.h in Headers */,
+				C9FC651D206C961F0046EE5E /* Shell.h in Headers */,
+				C9FC651F206C961F0046EE5E /* Shops.h in Headers */,
+				C9FC6521206C961F0046EE5E /* Skills.h in Headers */,
+				C9FC6523206C961F0046EE5E /* Splash.h in Headers */,
+				C9FC6525206C961F0046EE5E /* Toolbox.h in Headers */,
+				C9FC6527206C961F0046EE5E /* GameText.h in Headers */,
+				C9FC6529206C961F0046EE5E /* Updater.h in Headers */,
+				C9FC652B206C961F0046EE5E /* OpenPlay.h in Headers */,
+				C9FC652C206C961F0046EE5E /* Action.h in Headers */,
+				C9FC652D206C961F0046EE5E /* Async Sound.h in Headers */,
+				C9FC652E206C961F0046EE5E /* Common.h in Headers */,
+				C9FC652F206C961F0046EE5E /* Creatures.h in Headers */,
+				C9FC6530206C961F0046EE5E /* FileIO.h in Headers */,
+				C9FC6531206C961F0046EE5E /* FX.h in Headers */,
+				C9FC6532206C961F0046EE5E /* GameText.h in Headers */,
+				C9FC6533206C961F0046EE5E /* Globals.h in Headers */,
+				C9FC6534206C961F0046EE5E /* Graphics.h in Headers */,
+				C9FC6535206C961F0046EE5E /* GuildHalls.h in Headers */,
+				C9FC6536206C961F0046EE5E /* Inventory.h in Headers */,
+				C9FC6537206C961F0046EE5E /* Items.h in Headers */,
+				C9FC6538206C961F0046EE5E /* Keys.h in Headers */,
+				C9FC6539206C961F0046EE5E /* Network.h in Headers */,
+				C9FC653A206C961F0046EE5E /* Npc.h in Headers */,
+				C9FC653B206C961F0046EE5E /* Players.h in Headers */,
+				C9FC653C206C961F0046EE5E /* Quest.h in Headers */,
+				C9FC653D206C961F0046EE5E /* Remap.h in Headers */,
+				C9FC653E206C961F0046EE5E /* Resource.h in Headers */,
+				C9FC653F206C961F0046EE5E /* Shops.h in Headers */,
+				C9FC6540206C961F0046EE5E /* Skills.h in Headers */,
+				C9FC6541206C961F0046EE5E /* Splash.h in Headers */,
+				C9FC6542206C961F0046EE5E /* Toolbox.h in Headers */,
+				C9FC6543206C961F0046EE5E /* Shell.h in Headers */,
+				C9FC6544206C961F0046EE5E /* Updater.h in Headers */,
+				C9FC6545206C961F0046EE5E /* OPUtils.h in Headers */,
+				C9FC654B206C96200046EE5E /* String_Utils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C9FC64B1206C961F0046EE5E /* Carbon Toolbox Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FC64BF206C961F0046EE5E /* Build configuration list for PBXNativeTarget "Carbon Toolbox Debug" */;
+			buildPhases = (
+				C9FC64AC206C961F0046EE5E /* Headers */,
+				C9FC64AD206C961F0046EE5E /* Sources */,
+				C9FC64AE206C961F0046EE5E /* Resources */,
+				C9FC64AF206C961F0046EE5E /* Frameworks */,
+				C9FC64B0206C961F0046EE5E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carbon Toolbox Debug";
+			productName = "Carbon Toolbox Debug";
+			productReference = C9FC64B4206C961F0046EE5E /* Oberin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C9FC64BC206C961F0046EE5E /* Carbon Toolbox Final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9FC64C1206C961F0046EE5E /* Build configuration list for PBXNativeTarget "Carbon Toolbox Final" */;
+			buildPhases = (
+				C9FC64B7206C961F0046EE5E /* Headers */,
+				C9FC64B8206C961F0046EE5E /* Sources */,
+				C9FC64B9206C961F0046EE5E /* Resources */,
+				C9FC64BA206C961F0046EE5E /* Frameworks */,
+				C9FC64BB206C961F0046EE5E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carbon Toolbox Final";
+			productName = "Carbon Toolbox Final";
+			productReference = C9FC64BD206C961F0046EE5E /* Oberin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9FC64A7206C961F0046EE5E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C9FC64A8206C961F0046EE5E /* Build configuration list for PBXProject "Oberin" */;
+			hasScannedForEncodings = 0;
+			mainGroup = C9FC64A5206C961F0046EE5E;
+			productRefGroup = C9FC64B5206C961F0046EE5E /* Products */;
+			projectDirPath = "";
+			targets = (
+				C9FC64B1206C961F0046EE5E /* Carbon Toolbox Debug */,
+				C9FC64BC206C961F0046EE5E /* Carbon Toolbox Final */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9FC64AE206C961F0046EE5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC657C206C96200046EE5E /* OpenPlayLib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FC64B9206C961F0046EE5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC652A206C961F0046EE5E /* OpenPlayLib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		C9FC64B0206C961F0046EE5E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC6564206C96200046EE5E /* Oberin.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FC64BB206C961F0046EE5E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC64FB206C961F0046EE5E /* Oberin.rsrc in Rez */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9FC64AD206C961F0046EE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC6565206C96200046EE5E /* Action.c in Sources */,
+				C9FC6566206C96200046EE5E /* Async Sound.c in Sources */,
+				C9FC6567206C96200046EE5E /* Common.c in Sources */,
+				C9FC6568206C96200046EE5E /* Creatures.c in Sources */,
+				C9FC6569206C96200046EE5E /* FileIO.c in Sources */,
+				C9FC656A206C96200046EE5E /* FX.c in Sources */,
+				C9FC656B206C96200046EE5E /* Graphics.c in Sources */,
+				C9FC656C206C96200046EE5E /* Inventory.c in Sources */,
+				C9FC656D206C96200046EE5E /* Items.c in Sources */,
+				C9FC656E206C96200046EE5E /* Network.c in Sources */,
+				C9FC656F206C96200046EE5E /* Npc.c in Sources */,
+				C9FC6570206C96200046EE5E /* OPUtils.cpp in Sources */,
+				C9FC6571206C96200046EE5E /* Players.c in Sources */,
+				C9FC6572206C96200046EE5E /* Quest.c in Sources */,
+				C9FC6573206C96200046EE5E /* Resource.c in Sources */,
+				C9FC6574206C96200046EE5E /* Shell.c in Sources */,
+				C9FC6575206C96200046EE5E /* Shops.c in Sources */,
+				C9FC6576206C96200046EE5E /* Skills.c in Sources */,
+				C9FC6577206C96200046EE5E /* Splash.c in Sources */,
+				C9FC6578206C96200046EE5E /* Toolbox.c in Sources */,
+				C9FC6579206C96200046EE5E /* GameText.c in Sources */,
+				C9FC657E206C96200046EE5E /* Updater.c in Sources */,
+				C9FC6580206C96200046EE5E /* GuildHalls.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9FC64B8206C961F0046EE5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9FC64FC206C961F0046EE5E /* Action.c in Sources */,
+				C9FC64FE206C961F0046EE5E /* Async Sound.c in Sources */,
+				C9FC6500206C961F0046EE5E /* Common.c in Sources */,
+				C9FC6502206C961F0046EE5E /* Creatures.c in Sources */,
+				C9FC6504206C961F0046EE5E /* FileIO.c in Sources */,
+				C9FC6506206C961F0046EE5E /* FX.c in Sources */,
+				C9FC6508206C961F0046EE5E /* Graphics.c in Sources */,
+				C9FC650A206C961F0046EE5E /* GuildHalls.c in Sources */,
+				C9FC650C206C961F0046EE5E /* Inventory.c in Sources */,
+				C9FC650E206C961F0046EE5E /* Network.c in Sources */,
+				C9FC6510206C961F0046EE5E /* Npc.c in Sources */,
+				C9FC6512206C961F0046EE5E /* OPUtils.cpp in Sources */,
+				C9FC6514206C961F0046EE5E /* Players.c in Sources */,
+				C9FC6516206C961F0046EE5E /* Items.c in Sources */,
+				C9FC6518206C961F0046EE5E /* Quest.c in Sources */,
+				C9FC651A206C961F0046EE5E /* Resource.c in Sources */,
+				C9FC651C206C961F0046EE5E /* Shell.c in Sources */,
+				C9FC651E206C961F0046EE5E /* Shops.c in Sources */,
+				C9FC6520206C961F0046EE5E /* Skills.c in Sources */,
+				C9FC6522206C961F0046EE5E /* Splash.c in Sources */,
+				C9FC6524206C961F0046EE5E /* Toolbox.c in Sources */,
+				C9FC6526206C961F0046EE5E /* GameText.c in Sources */,
+				C9FC6528206C961F0046EE5E /* Updater.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C9FC64A9206C961F0046EE5E /* Imported CodeWarrior Settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = "Imported CodeWarrior Settings";
+		};
+		C9FC64C0206C961F0046EE5E /* Imported CodeWarrior Settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_REUSE_STRINGS = NO;
+				GCC_SHORT_ENUMS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
+				OTHER_CFLAGS = "-fno-inline";
+				PRODUCT_NAME = Oberin;
+				REZ_SCRIPT_TYPE = Roman;
+				REZ_SUPPRESS_REDECLARED_RESOURCE_TYPE_WARNINGS = NO;
+			};
+			name = "Imported CodeWarrior Settings";
+		};
+		C9FC64C2206C961F0046EE5E /* Imported CodeWarrior Settings */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_ALTIVEC_EXTENSIONS = NO;
+				GCC_CHAR_IS_UNSIGNED_CHAR = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_REUSE_STRINGS = NO;
+				GCC_SHORT_ENUMS = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /Developer/Headers/FlatCarbon;
+				OTHER_CFLAGS = "-fno-inline";
+				PRODUCT_NAME = Oberin;
+				REZ_SCRIPT_TYPE = Roman;
+				REZ_SUPPRESS_REDECLARED_RESOURCE_TYPE_WARNINGS = NO;
+			};
+			name = "Imported CodeWarrior Settings";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9FC64A8206C961F0046EE5E /* Build configuration list for PBXProject "Oberin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FC64A9206C961F0046EE5E /* Imported CodeWarrior Settings */,
+			);
+			defaultConfigurationIsVisible = 1;
+			defaultConfigurationName = "Imported CodeWarrior Settings";
+		};
+		C9FC64BF206C961F0046EE5E /* Build configuration list for PBXNativeTarget "Carbon Toolbox Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FC64C0206C961F0046EE5E /* Imported CodeWarrior Settings */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Imported CodeWarrior Settings";
+		};
+		C9FC64C1206C961F0046EE5E /* Build configuration list for PBXNativeTarget "Carbon Toolbox Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9FC64C2206C961F0046EE5E /* Imported CodeWarrior Settings */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Imported CodeWarrior Settings";
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9FC64A7206C961F0046EE5E /* Project object */;
+}
